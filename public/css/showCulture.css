@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+}
+#SC_contentTop{
+    width: 1349px;
+    height: 485px;
+    background: url("../image/showCulture_files/img_culture.jpg");
+    /*background-attachment: fixed;*/
+    background-size:100% 130%;
+    background-position: 0 -60px;
+    text-align: center;
+}
+#SC_contentTop span{
+    font-size: 20px;
+}
+#SC_contentTop h1{
+    font-size: 60px;
+}
+#SC_contentTop p{
+    font-size: 20px;
+    font-family: '微软雅黑';
+    letter-spacing: 2px;
+}
+#SC_down{
+    display: inline-block;
+    width: 33px;
+    height: 20px;
+    background: url("../image/showCulture_files/icons_culture.png");
+    background-position: -46px 0;
+    margin-top: 100px;
+    transition: all 0.5s ease;
+}
+#SC_down:hover{
+    transform: scale(1.3);
+}
+#SC_contentTop1{
+    width: 100%;
+    height: 485px;
+    padding-top: 175px;
+    visibility: inherit;
+}
+#SC_contentTop2,#SC_contentTop3{
+    width: 100%;
+    height:485px;
+    background-color: #a3a3a3;
+    opacity: 0.8;
+    padding-top: 175px;
+    display: none;
+}
+#SC_contentTop2 p,#SC_contentTop3 p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: '宋体', sans-serif;
+    letter-spacing: 0;
+}
+/*滚动上半部分结束*/
+#SC_contentBottom{
+    text-align: center;
+    padding-top: 110px;
+    width: 100%;
+    height: 770px;
+    background: #333;
+    position: relative;
+}
+.beauty_play:before{
+    content: '\25Ba';
+    font-size: 38px;
+    color: #CECCCF;
+    margin-left: 10px;
+}
+.beauty_play{
+    display: inline-block;
+    position: absolute;
+    left: 47%;
+    top:45%;
+    width:72px ;
+    height: 72px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 72px;
+    transition: all 0.5s ease;
+}
+.beauty_play:hover{
+    background: #333;
+}
+/*作家简介*/
+#SC_footer h2{
+    text-align: center;
+    margin:55px auto;
+    font-size: 31px;
+    color: #333;
+}
+.SC_float{
+    float: left;
+    width: 33.33%;
+    padding: 25px 0;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.SC_float:hover{
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+.SC_float p{
+    font-family: '微软雅黑';
+    margin: 10px 0;
+    font-size: 16px;
+}
+.SC_float span{
+    font-size: 13px;
+    font-family: '微软雅黑';
+    color: #ccc;
+}

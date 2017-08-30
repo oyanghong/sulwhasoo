@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+}
+.pro_content{
+    position: relative;
+    margin-bottom: 20px;
+}
+.pro_content img{
+    width: 100%;
+}
+/*整个浮动部分*/
+.pro_absolute{
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+    cursor: pointer;
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    top:0;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+.pro_more{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-family: "Times New Roman", 宋体, SimSun, 新宋体, NSimSun, 华文细黑, STSong, STSongti-SC, 华文宋体, serif;;
+}
+.pro_line:before{
+    content: "\2014";
+}
+.pro_sline:after{
+    position: relative;
+    content: "\007c";
+    right: 17px;
+}
+/*隐藏文字部分*/
+.pro_item{
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.5s ease;
+}
+.pro_item:hover{
+    border-bottom: 1px solid #000;
+}
+.pro_item h3{
+    display: inline-block;
+    width: 18%;
+    float: left;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+}
+.pro_itemText{
+    float: left;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.pro_itemText p{
+    color: #555;
+    font-family: '微软雅黑';
+}
+.pro_itemText span{
+    color: #767676;
+    font-family: '微软雅黑';
+}
+.pro_noborder{
+    border: none;
+}
+.pro_noborder:hover{
+    border: none;
+}
+.pro_text1{
+    display: none;
+}
+.pro_active{
+    display: block;
+}

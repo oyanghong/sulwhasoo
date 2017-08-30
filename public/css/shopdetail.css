@@ -1,0 +1,55 @@
+*{
+    margin:0 auto;
+    padding: 0;
+}
+body{
+    word-spacing: .05em;
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+}
+#shop_top{
+    width:1100px;
+    height:610px;
+    border:1px solid red;
+    text-align: center;
+    position: relative;
+    background: url('../image/product_files/bg_top_product.png') center 100% repeat-x
+}
+#shop_topText{
+    width:340px;
+    height:190px;
+    position: absolute;
+    top:25px;
+    left:0;
+    padding-top:35px;
+    text-align: left;
+    font-family: 'Buri',serif;
+}
+#shop_topText h1{
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 36px;
+    color: #191919;
+    letter-spacing: -0.028em;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+#shop_topText strong{
+    margin-top: 15px;
+    display: block;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: normal;
+}
+#shop_topText a{
+    display: inline-block;
+    line-height: 1.2em;
+    margin-top: 38px;
+    padding-right: 22px;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+    letter-spacing: -0.025em;
+    color: #767676;
+    text-decoration: none;
+    background: url("../image/product_files/bg_btn_detail.png") no-repeat 100% 50%;
+}

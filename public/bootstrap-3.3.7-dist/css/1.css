@@ -1,0 +1,283 @@
+*{
+    margin:0 auto;
+    paading:0;
+}
+body{
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+}
+section{
+    width:100%;
+    position: relative;
+}
+iframe{
+    width:100%;
+    border:0;
+}
+.protection{
+    width:1100px;
+    margin:0 auto;
+}
+.protection li{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    width:25%;
+    padding:0 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.cos_tect{
+    display: none;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transition: all 0.25s linear;
+}
+.text_blur{
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.25s linear;
+    background: rgba(255,255,255,0.6);
+}
+.protection li strong{
+    display: block;
+    overflow: hidden;
+    height: 1.5em;
+    margin-bottom: .1em;
+    font-weight: normal;
+    letter-spacing: .05em;
+}
+.protection li span{
+    display: block;
+    margin-bottom: 5px;
+}
+.cos_buy{
+    display: block;
+    width:100%;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    z-index:1;
+    text-decoration: none;
+    padding: 6px 0 7px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-family: 'NotoSans','Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+    cursor: pointer;
+}
+.cos_buy:hover{
+    color: #191919;
+}
+.cos_buy:hover:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 1s ease-in-out;
+    background: #767676;
+}
+
+
+/*护肤产品页面*/
+.prc_next{
+    display: none;
+}
+.prc_page{
+    width:1116px;
+    margin:0 auto;
+    text-align: right;
+    font-size: 18px;
+    position: relative;
+    top:20px;
+    font-family: 'Times New Roman','宋体',SimSun,'新宋体',NSimSun,'华文细黑',STSong,STSongti-SC,'\534E\6587\5B8B\4F53',serif;
+}
+.prc_page a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    margin-right:5px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    background: #dbdbda;
+    transition: background-color .2s ease-out;
+}
+.prc_page a i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    padding-top:5px !important;
+    color: #fff;
+    font-size: 26px;
+}
+.prc_page span{
+    margin:0 7px;
+}
+.prc_page .prc_bold{
+    color: #333;
+    margin:0 7px;
+}
+.prc_right:before{
+    content: '\e807';
+}
+[class^=prcicon-]:before{
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    width: 1em;
+    color: inherit;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+}
+.prc_pages{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.prc_class{
+    width:1110px;
+    margin:0 auto;
+}
+.prc_classDiv{
+    width:200px;
+    height: 32px;
+}
+
+
+
+
+/*使用顺序页面css*/
+.header{
+    width:100%;
+    height:240px;
+    box-sizing: border-box;
+    background: url("../image/protection_files/productmap_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.app_up{
+    width:100%;
+    height:100%;
+    text-align: center;
+    color: #fff;
+    padding:40px 0;
+    box-sizing: border-box;
+}
+.app_up h1{
+    margin-bottom: .3em;
+    font: normal 2.86em/1.3 'Times New Roman','宋体','SimSun','新宋体','NSimSun','华文细黑','STSong','STSongti-SC','\534E\6587\5B8B\4F53',serif;
+    letter-spacing: -0.06em;
+}
+.app_up p{
+    margin-top: 0;
+    line-height: 1.7;
+    font-size: 14px;
+}
+.app_up button{
+    display: inline-block;
+    width:125px;
+    height:38px;
+    font-size: 14px;
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+    border:1px solid #fff;
+    margin-top:20px;
+    background-color: transparent;
+    color: #fff;
+    transition: all .2s ease-out;
+}
+.app_up button:hover{
+    color: #000;
+    background: #fff;
+}
+
+/*使用顺序下面的ul*/
+.app_page{
+    width:1116px;
+}
+.app_page li{
+    list-style: none;
+    display: inline-block;
+    width:33%;
+    float: left;
+    margin:0 3px 3px 0;
+
+}
+.app_liBox{
+    height:150px;
+    margin:3px;
+    position: relative;
+    border:1px solid #d5d5d5;
+    transition: border .3s;
+}
+.app_liBox:hover{
+    border:1px solid #ccc;
+}
+.app_li{
+    display: inline-block;
+}
+.app_check{
+    width:150px;
+    height:150px;
+    color: #fff;
+    position: absolute;
+    top:0;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.app_check i{
+    display: block;
+    width:100%;
+    height:60%;
+    font-size: 22px;
+    line-height:120px;
+}
+.app_check span{
+    margin-top: 60%;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.app_liImg{
+    width:150px;
+    height:150px;
+}
+.app_liText{
+    width:205px;
+    height:150px;
+    padding:20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.app_liText span{
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #767676;
+}
+.app_liInner{
+
+}
+.app_liInner .app_innerSpan{
+    font-size: 18px;
+    color: #000;
+    font-family: 'Times New Roman','宋体','SimSun','新宋体','NSimSun','华文细黑','STSong','STSongti-SC','\534E\6587\5B8B\4F53',serif !important;
+    padding:5px 0 40px;
+}

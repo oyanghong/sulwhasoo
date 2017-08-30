@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑'
+}
+#car_title{
+    background: url("../image/shopCar_files/bg_cs_top_wrap.gif");
+    height: 75px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 75px;
+    color: #333;
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+}
+#car_step{
+    height: 291px;
+}
+#car_step ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+    list-style: none;
+    color: #aaa;
+}
+#car_step ul .car_on{
+    color: #333;
+}
+#car_step ul li div{
+    padding: 20px 0 0 78px;
+    margin-left: 20%;
+    height: 90px;
+    background: url("../image/shopCar_files/bg_cart_step.png") no-repeat;
+}
+#car_step ul li img{
+    position: absolute;
+    right: -5px;
+    top: 37px;
+}
+#car_step ul li div span{
+    font-size: 16px;
+    font-family: 'Buri',sans-serif;
+}
+#car_step ul li div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+#car_step .car_step1{
+    background-position: 0 -262px;
+}
+#car_step .car_step2{
+    background-position: -275px 15px;
+}
+#car_step .car_step3{
+    background-position: -550px 15px;
+}
+#car_step .car_step4{
+    background-position: -825px 15px;
+}
+/*购物表格*/
+#car_box table{
+    width: 100%;
+    border-top: 2px solid #555;
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+#car_box table tr{
+    border-bottom: 1px solid #555;
+}
+#car_box table th,td{
+    text-align: center;
+    width: 110px;
+    height: 53px;
+    line-height: 53px;
+}
+.culture_btn{
+    line-height: 28px !important;
+    border: 1px solid #333 !important;
+    border-radius: 0 !important;
+    color: #333;
+    font-size: 1.1em !important;
+    background: #fff;
+    text-align: center;
+    padding: 10px 49px;
+    transition: all 0.5s ease;
+}
+.culture_btn:hover{
+    color: #ffffff !important;
+    background: #333333;
+}
+.car_delbtn{
+    color: #767676;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 2px 18px;
+}
+#car_money{
+    height: 90px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #555;
+    margin-top: 60px;
+    padding: 24px 50px;
+    margin-bottom: 60px;
+    text-align: right;
+}
+#car_money p{
+    display: inline-block;
+    color: #555;
+    line-height: 40px;
+}
+#car_money p span{
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top:-8px;
+}
+#car_money b{
+    font-size: 36px;
+    padding-left: 5px;
+}
+#car_money .car_red{
+    color: #da333a;
+}
+.car_bg{
+    padding: 0 4.4%;
+    color: #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+}
+#car_box h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+.car_btn{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.car_buybtn{
+    color: #ffffff;
+    background: #333333;
+}
+.car_buybtn:hover{
+    color: #333 !important;
+    background: #fff;
+}
+/*隐藏的div*/
+#car_float{
+    position: absolute;
+    width: 772px;
+    height: 778px;
+    border: 2px solid #555;
+    background-color: #fff;
+    left: 26%;
+    top: 25%;
+    padding: 20px 30px;
+    display: none;
+}
+#car_float h2{
+    font-size: 26px;
+    font-family: '宋体';
+    border-bottom: 1px solid #555;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#car_float p{
+    font-size: 12px;
+    color: #767676;
+    margin-bottom: 40px;
+}
+.car_sub{
+    padding: 5px 50px;
+}
+.PI_close{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top:25px;
+    color: #999;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.PI_close:before{
+    content: "\2014";
+}
+.PI_close:after{
+    position: relative;
+    content: "\007C";
+    right: 26px;
+}
+/*购物表格*/
+.car_gname{
+    text-align: left;
+    padding-left: 90px;
+    font-size: 18px;
+}

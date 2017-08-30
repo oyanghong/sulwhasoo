@@ -1,0 +1,206 @@
+/*formember*/
+.for_block{
+    width: 550px;
+    height: 500px;
+    float: left;
+    margin-right: 20px;
+}
+.for_box{
+    margin:60px 100px;
+    height: 300px;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 1.1em;
+}
+.ex_point{
+    background: url("../image/shop_files/ex_point.jpg") no-repeat;
+}
+.mem_benefit{
+    background: url("../image/shop_files/mem_benefit.jpg") no-repeat;
+}
+.for_box h3{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 70px 125px 30px 125px;
+    border-bottom: 1px solid black;
+}
+.for_box p{
+    margin: 0;
+}
+.for_box a{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height:40px;
+    margin-top: 40px;
+}
+.for_more{
+    color: #333333;
+    border: 1px solid #333333;
+}
+.for_more:hover{
+    background-color: #333333;
+    transition: all 0.1s;
+    color: white;
+    text-decoration: none;
+}
+.for_active{
+    background-color: #333333;
+    color: white;
+}
+.container>h2{
+    font-family: 宋体;
+    text-align: center;
+}
+#mem_first{
+    height:40px;
+    margin: 10px 350px;
+}
+#mem_first a{
+    display: inline-block;
+    width:210px;
+    margin-right: 10px;
+    height: 38px;
+    text-align: center;
+    line-height:38px;
+    float: left;
+    color: #555555;
+    font-size: 1.2em;
+    border: 1px solid #999999;
+}
+.mem_active{
+    background-color: #999999;
+    color: white!important;
+}
+#cover{
+    width: 100%;
+    height: 1053px;
+    background-color: #191919;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1001;
+}
+#for_expect{
+    display: none;
+    position: fixed;
+    top: 190px;
+    left: 580px;
+    width: 170px;
+    height: 210px;
+    background-color: white;
+    padding: 0 20px;
+    z-index: 1001;
+}
+#for_expect p{
+    height: 60px;
+    line-height: 60px;
+}
+#for_ex_p{
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#for_ex_p2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 宋体;
+}
+#for_expect_a{
+    display: inline-block;
+    margin: 20px 5px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+/*formember end*/
+/*mem_join*/
+#mem_join{
+    padding: 50px 70px;
+    width: 1140px;
+    height: 450px;
+    background: url("../image/shop_files/brand_benefit.jpg") no-repeat;
+}
+#mem_join p{
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 宋体;
+}
+#mem_join a{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 800px;
+    font-size: 1.1em;
+}
+#mem_pic{
+    display: inline-block;
+    width: 1000px;
+    height: 230px;
+    padding: 0;
+}
+#mem_pic li{
+    list-style: none;
+    display: inline-block;
+    width: 270px;
+    height: 70px;
+    margin: 30px;
+    float: left;
+    font-size: 1.1em;
+    color: #767676;
+    font-weight: bold;
+}
+/*mem_join end*/
+/*mem_rule*/
+#mem_rule{
+    display: none;
+    border-top: 2px solid #555555;
+}
+.mem_borderB{
+    border-bottom: 1px solid #DDDDDD;
+}
+.mem_borderR{
+    border-right: 1px solid #DDDDDD;
+}
+#mem_rule th{
+    width: 150px;
+    text-align: center;
+    padding:50px 0;
+    font-size: 1.15em;
+    color: #555555;
+}
+#mem_rule thead td img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 20px 127px;
+}
+#mem_rule thead td p{
+    text-align: center;
+    color: #555555;
+    font-weight: bold;
+}
+#mem_rule tbody td{
+    font-size: 1.1em;
+}
+#mem_rule tbody td p{
+    text-align: center;
+    color: #767676;
+}
+#mem_rule tbody td p span{
+    color: #191919;
+    font-weight: bold;
+}
+/*mem_rule end*/

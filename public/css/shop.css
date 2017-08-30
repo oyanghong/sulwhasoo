@@ -1,0 +1,316 @@
+.container-fluid{
+    padding: 0;
+}
+/*shop*/
+.shop_nav{
+    display: inline-block;
+    width: 1100px;
+    height:50px;
+    border-top: 1px solid #D5D5D5;
+    padding: 0px 35px;
+}
+.shop_nav li{
+    list-style: none;
+    display: inline-block;
+    width: 320px;
+    height: 50px;
+    margin: 0px 355px;
+}
+.shop_nav li a{
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #B2AAAA;
+    float: left;
+}
+.shop_nav li a:hover{
+    color: black;
+    transition: all 0.1s;
+}
+#shop_active{
+    color: black;
+}
+.shop_bg{
+    height:auto;
+    position: relative;
+}
+.sl_btn{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+}
+.sr_btn{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+}
+/*shop_bg1 btn*/
+.btn_0{
+    left: 567px;
+    top: 519px;
+}
+.btn_1{
+    left: 710px;
+    top: 519px;
+}
+
+.btn_2ol{
+    left: 190px;
+}
+.btn_3ol{
+    left: 330px;
+}
+.btn_2ot{
+    top: 1587px;
+}
+
+.btn_4ol{
+    left: 670px;
+}
+.btn_5ol{
+    left: 810px;
+}
+
+.btn_6ol{
+    left: 140px;
+}
+.btn_7ol{
+    left: 280px;
+}
+.btn_6ot{
+    top:2080px;
+}
+
+.btn_8ot{
+    top:2685px;
+}
+.btn_9ot{
+    top:2730px;
+}
+
+.btn_10ol{
+    left: 840px;
+}
+.btn_11ol{
+    left: 880px;
+}
+/*shop_bg1 btn end*/
+/*shop_bg2 btn*/
+.btn_12{
+    top:426px;
+    left:200px;
+}
+.btn_13{
+    top:470px;
+    left:200px;
+}
+
+.btn_14ot{
+    top:1459px;
+}
+.btn_14ol{
+    left: 97px;
+}
+.btn_15ol{
+    left: 230px;
+}
+
+.btn_16ol{
+    left: 419px;
+}
+.btn_17ol{
+    left: 555px;
+}
+
+.btn_18ol{
+    left: 719px;
+}
+.btn_19ol{
+    left: 855px;
+}
+/*shop_bg2 btn end*/
+
+/*shop_bg3 btn*/
+.btn_bw{
+    width: 155px!important;
+}
+.btn_20ot{
+    top:651px;
+}
+.btn_20ol{
+    left: 183px;
+}
+.btn_21ol{
+    left: 350px;
+}
+
+.btn_22ol{
+    left: 658px;
+}
+.btn_23ol{
+    left: 822px;
+}
+
+.btn_24ot{
+    top:1143px;
+}
+
+.btn_25ot{
+    top:1722px;
+}
+.btn_25ol{
+    left: 175px;
+}
+.btn_26ol{
+    left: 345px;
+}
+/*shop_bg3 btn end*/
+
+/*shop end*/
+/*salewell*/
+.swl_btn{
+    width: 120px!important;
+    height: 35px!important;
+}
+.swr_btn{
+    width: 73px!important;
+    height: 27px!important;
+}
+/*sw_btn1*/
+.sw_btn_0ot{
+    top:790px;
+}
+.sw_btn_0ol{
+    left: 347px;
+}
+.sw_btn_1ol{
+    left: 483px;
+}
+/*sw_btn1 end*/
+/*sw_btn2*/
+.sw_btn_2ot{
+    top:365px;
+}
+.sw_btn_2ol{
+    left: 693px;
+}
+.sw_btn_3ol{
+    left: 830px;
+}
+
+.sw_btn_4ot{
+    top:842px;
+}
+.sw_btn_4ol{
+    left: 370px;
+}
+.sw_btn_5ol{
+    left: 505px;
+}
+/*sw_btn2 end*/
+/*sw_btn3*/
+.sw_btn_6ot{
+    top:373px;
+}
+.sw_btn_6ol{
+    left: 689px;
+}
+.sw_btn_7ol{
+    left: 826px;
+}
+
+.sw_btn_8ot{
+    top:846px;
+}
+.sw_btn_8ol{
+    left: 360px;
+}
+.sw_btn_9ol{
+    left: 495px;
+}
+/*sw_btn3 end*/
+/*sw_btn4*/
+.sw_btn_12ot{
+    top:851px;
+}
+/*sw_btn4 end*/
+/*sw_btn5*/
+.sw_btn_13ot{
+     top:390px;
+ }
+.sw_btn_14ot{
+    top:1315px;
+}
+/*sw_btn5 end*/
+/*salewell end*/
+.shop_div{
+    display: none;
+    width:700px;
+    height:400px;
+    position:fixed;
+    top:100px;
+    left:300px;
+    z-index:1000;
+    border:1px solid #555555;
+    background:white;
+    padding:30px;
+}
+.shop_div h1{
+    font-family: 宋体;
+}
+.shop_div p{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EEEEEE;
+}
+#shop_p1{
+    border-bottom:1px solid #555555;
+    font-size:1.4em;
+ }
+#shop_mon{
+    font-size:2.5em;
+    height: 60px;
+    line-height:60px;
+    font-weight:bold;
+}
+.shop_div p select{
+    width:130px;
+    height:30px;
+    margin-bottom: 10px;
+    float: left;
+    border:none;
+    border-bottom:2px solid #191919;
+    text-indent:20px;
+}
+#shop_sel{
+    width:638px;
+}
+#shop_buy_btn a{
+    display:inline-block;
+    width:196px;
+    height:38px;
+    line-height:38px;
+    float:left;
+    text-align:center;
+    color:white;
+    background: #333333;
+    margin-right:10px;
+    margin-left:5px;
+}
+.shop_close_btn{
+    background: url("../image/shop_files/btn_close_quickBuy.png")no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.footer{
+    height: 280px;
+}

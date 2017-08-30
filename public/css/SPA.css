@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#spa_head{
+    width: 100%;
+    height: 530px;
+    background: url("../image/SPA_files/1440570546672.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#spa_head img{
+    margin-top: 15%;
+}
+.spa_btn{
+    width: 164px;
+    height: 40px;
+    line-height: 28px !important;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important;
+    color: #fff;
+    font-size: 1.1em !important;
+    text-align: center;
+    font-family: "微软雅黑";
+    transition: all 0.5s ease;
+    margin-top: 80px;
+}
+.spa_btn:hover{
+    background-color: #fff;
+    color: #333;
+}
+/*头部大图完成*/
+#spa_content{
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: center;
+}
+#spa_title{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#spa_title h2{
+    font-family: '宋体';
+    margin-top: 55px;
+    font-size: 2.0em;
+    color: #191919;
+}
+#spa_title p{
+    display: inline-block;
+    width: 84%;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 23px;
+    margin-bottom:50px;
+}
+.spa_text{
+    width: 100%;
+    height: 315px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    border-bottom: 1px solid #ddd;
+}
+.spa_text img{
+    float: left;
+}
+.spa_textContent{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 60px 0 60px 60px;
+    text-align: left;
+    font-family: '宋体';
+}
+.spa_textContent h3{
+    margin-top: 5px;
+    font-size: 22px;
+}
+.spa_textContent p{
+    font-family: '微软雅黑';
+    text-align: left;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 25px;
+}

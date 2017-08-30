@@ -1,0 +1,681 @@
+#about_box{
+    height: 662px;
+    overflow: hidden;
+    position: relative;
+}
+#about_head{
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+#about_pic2{
+    display: inline-block;
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    top: 65px;
+    right:-115px;
+    -webkit-filter: blur(8px) opacity(75%);
+}
+#about_pic3{
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    right:600px;
+    transform: rotate(60deg);
+    -webkit-filter: blur(5px) opacity(75%);
+}
+@keyframes dragTop {
+    0%{
+        top:662px;
+    }
+    100%{
+        top:0;
+    }
+}
+.about_page_active{
+    animation: dragTop 1s;
+    top:0;
+    z-index: 10;
+}
+@keyframes dragDown {
+    0%{
+        top:0;
+    }
+    100%{
+        top:662px;
+    }
+}
+.about_abg_active1{
+    animation: dragDown 1s;
+    z-index: 10;
+    top:662px;
+}
+/*about_scroll*/
+#about_scroll{
+    position: fixed;
+    top: 175px;
+    right: 20px;
+    height: 300px;
+    width: auto;
+    display: inline-block;
+    z-index: 1000;
+    padding: 0;
+}
+#about_scroll li{
+    list-style: none;
+    height: 30px;
+    margin-bottom: 7px;
+    display: block;
+}
+#about_scroll li a{
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding-right: 35px;
+    float: right;
+    color: #8d7861;
+    background: url("../image/about_files/indi-dark.png") no-repeat top 13px right 13px;
+}
+.about_abg_active{
+    background:url('../image/about_files/indi-on.png')no-repeat top 6px right 10px!important;
+}
+#about_scroll li #about_all_page{
+    background: url("../image/about_files/btn-list.png") no-repeat top 13px right 10px;
+}
+#about_scroll li a span{
+    display: none;
+}
+/*about_scroll end*/
+/*about_first*/
+.about_first{
+    background-color: #F3F2F0;
+}
+.about_page{
+    width: 100%;
+    height:662px;
+    overflow: hidden;
+    position: absolute;
+    top: 662px;
+}
+#about_pic1{
+    display: inline-block;
+    width: 530px;
+    height: 290px;
+    position: absolute;
+    top: 330px;
+    left:130px;
+    opacity: 0;
+}
+#about_word{
+    width:250px;
+    height:310px;
+    position: absolute;
+    top:240px;
+    right:230px;
+}
+#about_move{
+    width:250px;
+    height: auto;
+}
+#about_move p span{
+    display: none;
+    font-size: 2em;
+    margin:0 30px 0 15px;
+    font-family: 新宋体;
+}
+#about_move small{
+    font-size: 1.2em;
+    margin-right: 10px;
+    font-family:楷体;
+    display: none;
+}
+#about_poem{
+    margin-top: 60px;
+    margin-left: 20px;
+    height: 0;
+    font-size: 1.7em;
+    font-family: 仿宋;
+    overflow: hidden;
+    opacity: 0;
+}
+.about_drag{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    top: 600px;
+    left: 640px;
+    display: none;
+}
+.about_drag a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: 仿宋;
+    text-align: center;
+}
+/*about_first end*/
+.about_padding60{
+    padding: 60px;
+}
+/*about_page1、3、5、7、9*/
+.about_bgW{
+    background: white;
+}
+.about_page video{
+    margin: -200px -300px;
+}
+.about_fixed{
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    color: white;
+    display: none;
+}
+.about_fixed p{
+    font-family: 楷体;
+    font-size: 1.5em;
+}
+.about_fixed h1{
+    margin-bottom: 30px;
+    font-family: 仿宋;
+    font-size: 4em;
+}
+/*about_page1、3、5、7、9 end*/
+/*about_page2*/
+.about_page h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #888888;
+    font-family: 仿宋;
+}
+.about_menu{
+    height: 420px;
+    overflow: hidden;
+}
+.about_ul_bar{
+    width: 2100px;
+    height: 420px;
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+.about_ul_bar li{
+    display: inline-block;
+    list-style: none;
+    width: 160px;
+    height: 405px;
+    margin: 15px 140px 0px 0px;
+    float: left;
+}
+.about_ul_bar li img{
+    width:160px;
+    height: 270px;
+    margin-bottom: 10px;
+}
+.about_ul_bar li span{
+    font-size: 1em;
+    font-family: 宋体;
+}
+.about_more{
+    width: 135px;
+    height: 35px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.about_more a{
+    display: inline-block;
+    width:auto;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    float: left;
+}
+.about_more_a1{
+    width: 80px;
+    position: relative;
+    left:80px;
+    font-size: 1.1em;
+    font-family: 宋体;
+    color: black;
+    opacity: 0;
+}
+.about_more a img{
+    margin: 6px 20px;
+    height: 20px;
+    width: 15px;
+    display: inline-block;
+}
+#about_drag_box{
+    width: 1250px;
+    background: #DDDDDD;
+    height: 4px;
+    position: relative;
+    top: 20px;
+}
+#about_dragR{
+    display: inline-block;
+    width: 744px;
+    height: 4px;
+    background: #A47F68;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about_page_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #767676;
+    opacity: 0.7;
+    display: none;
+}
+/*about_page2 end*/
+/*about_page3、7、9*/
+.about_page img{
+    width: 100%;
+    height: 662px;
+}
+/*about_page3、7、9 end*/
+/*about_page4*/
+.about_ul_pic{
+    height: 380px;
+    color: white;
+    padding:0;
+    position: relative;
+    opacity: 0;
+}
+.about_ul_pic li{
+    display: inline-block;
+    width: 409px;
+    height: 380px;
+    margin: 0;
+    padding: 30px 40px;
+    float: left;
+}
+#about_ginseng{
+    background: url("../image/about_files/img-layer-detail-ginseng.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_jaeumdan{
+    background: url("../image/about_files/img-layer-detail-jaeumdan.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_redPine{
+    background: url("../image/about_files/img-layer-detail-redPine.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.about_ul_pic li p{
+    font-size: 1.2em;
+    font-family: 宋体;
+    display: none;
+}
+.about_ul_pic li h3{
+    color: white;
+    font-family: 楷体;
+    display: none;
+}
+.about_ul_pic li .about_pic_bottom{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 390px;
+}
+/*about_page4 end*/
+/*about_page5*/
+.about_image{
+    width: 100%;
+    height:100%;
+    position: relative;
+    background: url("../image/about_files/fx.png") no-repeat top -80px left 0px;
+    background-size: 100% 100%;
+}
+.about_image img{
+    display: inline-block;
+    width: 100%;
+    height:109%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+#about_c1{
+    top: -80px;
+    height: 118.5%;
+}
+#about_c2{
+    left:-100px;
+}
+#about_l1,#about_r1{
+    top: -90px;
+    height: 118.5%;
+}
+/*about_page5 end*/
+/*about_page6*/
+.about_ul_img{
+    padding: 0;
+    margin: 0;
+    height: 422px;
+}
+.about_ul_img li{
+    list-style: none;
+    height: 422px;
+    display: none;
+}
+.about_img_show{
+    display: block!important;
+    transition: all 2s ease;
+}
+.about_img_info{
+    width: 280px;
+    height: 220px;
+    margin: 100px;
+    float: left;
+}
+.about_img_info p{
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 微软雅黑;
+}
+#about_img_1{
+    background: url("../image/about_files/bg-harmorny-skincare-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_img_1 .about_img_info{
+    background: #C99074;
+}
+#about_img_2{
+    background: url("../image/about_files/bg-harmorny-holistic-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_img_2 .about_img_info{
+    background: #726D6E;
+}
+#about_img_3{
+    background: url("../image/about_files/bg-harmorny-beauty-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_img_3 .about_img_info{
+    background: #77522D;
+    opacity: 0.9;
+}
+#about_img_4{
+    background: url("../image/about_files/bg-harmorny-spa-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_img_4 .about_img_info{
+    background: #4E4134;
+    opacity: 0.9;
+}
+#about_pic_btn{
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    margin-left: 425px;
+    margin-top: 0px;
+    padding: 0;
+}
+#about_pic_btn li{
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+#about_pic_btn li a{
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    margin:24px 10px;
+    float: left;
+    background: #DDDDDD;
+}
+#about_pic_btn li .about_pb_active{
+    height: 4px;
+    margin: 23px 10px;
+    background: #A47F68;
+}
+/*about_page6 end*/
+/*about_page8*/
+#about_ul_bar2 li{
+    position: relative;
+    top:20px;
+    opacity: 0;
+}
+/*about_page8 end*/
+/*about_page10*/
+#about_art{
+    background: url("../image/about_files/art.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+}
+#about_culture{
+    background: url("../image/about_files/culture.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+}
+#about_shine{
+    background: url("../image/about_files/shine.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+}
+/*about_page10 end*/
+/*about_last*/
+#about_last{
+    background: url("../image/about_files/bg-cover-eternity-pc.jpg") no-repeat;
+}
+#about_last_word2{
+    margin: 0;
+    width: 600px;
+    height: 160px;
+    position: relative;
+    top: 230px;
+    left: 400px;
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+}
+#about_last_word2 li{
+    list-style: none;
+}
+#about_last_word2 h1{
+    margin: 0 0 5px 0;
+    font-family: 宋体;
+}
+#about_last_word2 p{
+    margin-bottom: 0;
+    font-size: 1.3em;
+    font-family: 楷体;
+    color:#95816C;
+}
+.about_colorB{
+    color: #333333;
+}
+#about_top160{
+    opacity: 0;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+}
+@keyframes toTop {
+    0%{
+        top:662px;
+    }
+    100%{
+        top:0;
+    }
+}
+.about_last_ani{
+    animation: toTop 1s;
+    top:0!important;
+}
+/*about_last end*/
+/*about_all_pages*/
+#about_all_pages{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 662px;
+    margin: 0;
+    padding: 10px;
+    display: none;
+}
+.about_little_page{
+    width: 405px;
+    height: 300px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+.about_bgG{
+    width: 405px;
+    height: 300px;
+    background-color: #95816C;
+    opacity: 0;
+}
+.about_colorW{
+    color: white;
+}
+.about_little_page h2{
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 40px;
+    font-family: 宋体;
+    padding-left: 30px;
+    z-index: 10;
+    font-weight: bold;
+}
+.about_bgG p{
+    font-family: 隶书;
+    padding-left: 30px;
+    font-size: 1.3em;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 60px;
+}
+.about_close_ps{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    right: 20px;
+    background: url("../image/about_files/btn-close-pc.gif") no-repeat center;
+}
+#about_page1{
+    background:url("../image/about_files/bg-section-origin-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_page2{
+    background:url("../image/about_files/bg-section-artisan-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_page3{
+    background:url("../image/about_files/bg-section-harmorny-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_page4{
+    background:url("../image/about_files/bg-section-ideal-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_page5{
+    background:url("../image/about_files/bg-section-beauty-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#about_page6{
+    background:url("../image/about_files/bg-section-eternity-pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*about_all_pages end*/
+/*about_more_page*/
+#about_more_page{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 685px;
+    height: 662px;
+    padding:20px 60px;
+    z-index: 2000;
+    overflow-y: scroll;
+    background: #F9F9F9;
+}
+#about_more_page>h3{
+    color:#978888;
+    margin-bottom: 40px;
+    font-family: 宋体;
+}
+.about_page_info{
+    width: 553px;
+    height: 900px;
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+    margin-bottom:40px;
+}
+.about_page_info img{
+    display: none;
+    width:533px;
+    height: 440px;
+    float: left;
+}
+.about_page_info ul{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    margin: 0 211px;
+}
+.about_page_info ul li{
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #999999;
+    margin: 10px 5px;
+}
+.about_page_info ul .about_img_active{
+    width: 20px;
+    border-radius: 40%;
+}
+.about_page_info h1{
+    color:#888888;
+    font-family: 楷体;
+}
+.about_page_info p{
+    color:#767676;
+    font-size: 1.2em;
+    font-family: 宋体;
+    margin-bottom: 20px;
+}
+.about_page_info p span{
+    color:#8D7861;
+}
+.about_page_info>span{
+    font-size: 1.1em;
+    color: #555555;
+}
+#about_close_mp{
+    position: fixed;
+}
+/*about_more_page end*/

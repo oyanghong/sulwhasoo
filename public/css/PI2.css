@@ -1,0 +1,62 @@
+#PI2_content{
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+}
+#PI2_content>h2{
+    margin: 100px 0 30px 0;
+    text-align: center;
+}
+#PI2_content img{
+    width: 100%;
+}
+#PI2_wordbox{
+    width: 100%;
+    height: auto;
+    padding: 20px 70px;
+}
+#PI2_wordbox p{
+    margin: 30px 0 0 0;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+#PI2_video{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    background: url("../image/wait.gif") no-repeat center;
+    cursor: pointer;
+}
+#PI2_video embed{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#PI2_video img{
+    width: 100%;
+    height: 100%;
+}
+#PI2_video .beauty_Splay{
+    top: 1850px;
+}
+#PI2_use{
+    width: 100%;
+    height: 155px;
+}
+#PI2_use h2{
+    border-bottom: 1px solid #EEEEEE;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+    font-family: 宋体;
+    font-weight: bold;
+}
+#PI2_use p{
+    margin: 30px 70px 0 70px;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+#PI2_daren{
+    padding-top: 60px;
+    border-top: 1px solid #EEEEEE;
+}

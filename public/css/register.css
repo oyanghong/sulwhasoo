@@ -1,0 +1,93 @@
+#reg_box{
+    width: 1020px;
+    height: 1100px;
+    border: 40px solid #EEEEEE;
+    margin-left: 30px;
+    padding: 30px 60px;
+}
+#reg_box h1{
+    margin: 50px 0;
+    text-align: center;
+    font-family: 宋体;
+    font-weight: bold;
+}
+#reg_box p{
+    padding-left: 150px;
+    height: 50px;
+    line-height: 35px;
+    margin: 10px 0;
+}
+#reg_box p label{
+    width: 150px;
+    font-size: 1.1em;
+}
+.reg_btn_a{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #EEEEEE;
+    border:1px solid #CCCCCC;
+    color: #767676;
+}
+.reg_btn_a:hover{
+    color: #767676;
+}
+#reg_box p>span{
+    color: #767676;
+}
+#reg_box p label span{
+    color: #CAA58E;
+    font-size: 1.2em;
+}
+.reg_a{
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 20px;
+    color: #333333;
+    border:1px solid #333333;
+    font-size: 1.1em;
+}
+.reg_a:hover{
+    color: #333333;
+}
+.reg_a_active{
+    background: #333333;
+    color: white;
+    border: 0;
+}
+.reg_a_active:hover{
+    color: white;
+}
+#reg_p_bot{
+    border-top: 1px solid #DDDDDD;
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-left: 50px!important;
+    color: #767676;
+}
+#reg_p_bot a{
+    font-weight: bold;
+}
+#tcode{
+    display: inline-block;
+    width: 130px;
+    margin:5px 5px 5px 0;
+    padding: 0 30px;
+    height: 38px;
+    border: 1px solid #222222;
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: bold;
+}
+input{
+    padding-left: 5px;
+}
+#reg_box .reg_tishi{
+    text-align: center ;
+    color: #A54C4E;
+}

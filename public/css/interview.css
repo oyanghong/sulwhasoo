@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', '宋体', 'SimSun', '新宋体', 'NSimSun', '华文细黑', 'STSong', 'STSongti-SC', '\534E\6587\5B8B\4F53', serif;
+}
+#view_top{
+    width: 100%;
+    height: 360px;
+    background: url("../image/interview_files/1467677633694.jpg");
+    background-size: cover;
+}
+#view_top span{
+    color: #aaa;
+    font-size: 40px;
+}
+#view_top p{
+    display: inline-block;
+    margin-top: 14%;
+    margin-left: 100px;
+}
+#view_top b{
+    font-size: 40px;
+    color: #fff;
+}
+/*访谈内容部分*/
+.view_content{
+    width: 100%;
+    /*height: 1288px;*/
+    position: relative;
+    padding-left: 50%;
+    margin-bottom: 5%;
+}
+.view_content img{
+    position: absolute;
+    left: 0;
+}
+.view_text{
+    width: 100%;
+    padding: 40px 28px 0 28px;
+}
+.view_title{
+    height: 140px;
+    padding: 6.5% 4%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-size: 25px;
+    font-family: '宋体' !important;
+    color: #000 !important;
+    line-height: 1.4 !important;
+}
+.view_title2{
+    height: 175px;
+}
+.view_text b{
+    margin-top: 40px;
+    display: inline-block;
+    font-family: '微软雅黑';
+    font-size: 15px;
+}
+.view_text p{
+    color: #767676;
+    font-family: '微软雅黑';
+    line-height: 2.0;
+    margin-top: 10px;
+}
+hr{
+    border-bottom: 1px solid  #ccc;
+}
+.view_img{
+    margin-top: 100px !important;
+}

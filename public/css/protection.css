@@ -1,0 +1,423 @@
+*{
+    margin:0 auto;
+    paading:0;
+}
+body{
+    font-family:'Times New Roman','宋体',SimSun,'新宋体',NSimSun,'华文细黑',STSong,STSongti-SC,'\534E\6587\5B8B\4F53',serif;
+}
+section{
+    width:100%;
+    position: relative;
+}
+.prcicon-right{
+    font-family: 'Times New Roman','宋体',SimSun,'新宋体',NSimSun,'华文细黑',STSong,STSongti-SC,'\534E\6587\5B8B\4F53',serif;
+}
+.protection{
+    width:1100px;
+    margin:0 auto;
+    position: relative;
+}
+.protection li{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    width:25%;
+    padding:0 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.cos_tect{
+    display: none;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transition: all 0.25s linear;
+}
+.text_blur{
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.25s linear;
+    background: rgba(255,255,255,0.6);
+    z-index: 100;
+}
+.protection li strong{
+    display: block;
+    overflow: hidden;
+    height: 1.5em;
+    margin-bottom: .1em;
+    font-weight: normal;
+    letter-spacing: .05em;
+}
+.protection li span{
+    display: block;
+    margin-bottom: 5px;
+}
+.cos_buy{
+    display: block;
+    width:100%;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    z-index:1;
+    text-decoration: none;
+    padding: 6px 0 7px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-family: 'NotoSans','Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+    cursor: pointer;
+}
+.cos_buy:hover{
+    color: #191919;
+}
+.cos_buy:hover:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 1s ease-in-out;
+    background: #767676;
+}
+
+/*分类*/
+.prc_class{
+    width:100%;
+    height:76px;
+    font-size: 14px;
+    position: relative;
+}
+.prc_classDiv{
+    float: left;
+    width:200px;
+    height:32px;
+    position: relative;
+}
+.prc_selector{
+    color: #999;
+    line-height:32px;
+    padding-left:10px;
+    border-bottom: 2px solid #333;
+}
+.prc_selector:hover{
+    color: #000;
+}
+.prc_selector .prc_down{
+    display: block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    right:10px;
+    top:13px;
+    background: url("../image/protection_files/bg_btn_detail.png") center no-repeat;
+}
+.prc_selector1{
+    float: right;
+    margin-left:10px;
+}
+.prc_classDiv ul{
+    display: none;
+    box-sizing: border-box;
+    padding:0;
+    width:200px;
+    border:1px solid #555;
+    color: #999;
+    position: absolute;
+    top:34px;
+    z-index: 10001;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+.prc_classDiv ul li{
+    list-style: none;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+}
+.prc_classDiv ul li:hover{
+    color: #191919;
+    background: #eee;
+}
+.prc_classDiv ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-left:10px;
+}
+
+/*护肤产品页面*/
+.prc_next{
+    display: none;
+}
+.prc_page{
+    width:1116px;
+    margin:0 auto;
+    text-align: right;
+    font-size: 18px;
+    position: relative;
+    top:20px;
+    font-family: 'Times New Roman','宋体',SimSun,'新宋体',NSimSun,'华文细黑',STSong,STSongti-SC,'\534E\6587\5B8B\4F53',serif;
+}
+.prc_page a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    margin-right:5px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    background: #dbdbda;
+    transition: background-color .2s ease-out;
+}
+.prc_page a i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    padding-top:5px !important;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Times New Roman','宋体',SimSun,'新宋体',NSimSun,'华文细黑',STSong,STSongti-SC,'\534E\6587\5B8B\4F53',serif;
+}
+.prc_page span{
+    margin:0 7px;
+}
+.prc_page .prc_bold{
+    color: #333;
+    margin:0 7px;
+}
+.prc_right:before{
+    content: '\e807';
+}
+[class^=prcicon-]:before{
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    width: 1em;
+    color: inherit;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+}
+.prc_pages{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.prc_class{
+    width:1110px;
+    margin:0 auto;
+}
+.prc_classDiv{
+    width:200px;
+    height: 32px;
+}
+
+
+
+
+/*使用顺序页面css*/
+.header{
+    width:100%;
+    height:240px;
+    box-sizing: border-box;
+}
+.app_up{
+    width:100%;
+    height:240px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding:40px 0;
+    box-sizing: border-box;
+    background: url("../image/protection_files/productmap_bg.jpg") no-repeat top center;
+    background-size: cover;
+
+}
+.header h1{
+    margin-bottom: .3em;
+    font: normal 2.86em/1.3 'Times New Roman','宋体','SimSun','新宋体','NSimSun','华文细黑','STSong','STSongti-SC','\534E\6587\5B8B\4F53',serif;
+    letter-spacing: -0.06em;
+}
+.header p{
+    margin-top: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif !important;
+}
+.header button{
+    display: inline-block;
+    width:125px;
+    height:38px;
+    font-size: 14px;
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+    border:1px solid #fff;
+    margin-top:20px;
+    background-color: transparent;
+    color: #fff;
+    transition: all .2s ease-out;
+}
+.header button:hover{
+    color: #000;
+    background: #fff;
+}
+.app_down{
+    width:100%;
+    height:100px;
+    color: #fff;
+    display: none;
+    padding:10px 0;
+    box-sizing: border-box;
+    text-align: left;
+    background: url("../image/protection_files/productmap_bg.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    top:-100px;
+    z-index:100;
+    transition:top 0.5s linear;
+}
+.app_down h1{
+    display: inline-block;
+    margin-left:120px;
+}
+.app_down p{
+    display: inline-block;
+    text-align: left;
+    margin-left:35px;
+}
+
+.app_down button{
+    display: inline-block;
+    float: right;
+    margin-right:120px;
+}
+
+
+/*使用顺序下面的ul*/
+.app_page{
+    width:1126px;
+    margin-top:10px;
+}
+.app_page li{
+    list-style: none;
+    display: inline-block;
+    width:33%;
+    border:2px solid transparent;
+    position: relative;
+}
+.app_liBox{
+    height:150px;
+    margin:6px;
+    position: relative;
+    border:1px solid #d5d5d5;
+    transition: border .3s;
+}
+/*.app_liBox:hover{
+    border:1px solid #565656;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+}*/
+.app_li{
+    display: inline-block;
+}
+.app_check{
+    width:150px;
+    height:148px;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top:0;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.app_check i{
+    display: block;
+    width:100%;
+    height:60%;
+    font-size: 22px;
+    line-height:120px;
+}
+.app_check span{
+    margin-top: 60%;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.app_liImg{
+    width:150px;
+    height:150px;
+}
+.app_liText{
+    width:185px;
+    height:150px;
+    padding-top:20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.app_liText span{
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #767676;
+    font-family: NotoSans,'Microsoft YaHei New','Microsoft Yahei','微软雅黑','冬青黑体','Hiragino Sans GB',STHeitiSC,SimHei,Helvetica,sans-serif;
+}
+.app_liInner{
+    margin-left:5px;
+}
+.app_liInner .app_innerSpan{
+    font-size: 18px;
+    color: #555;
+    font-family: 'Times New Roman','宋体','SimSun','新宋体','NSimSun','华文细黑','STSong','STSongti-SC','\534E\6587\5B8B\4F53',serif !important;
+    padding:5px 0 40px;
+}
+.app_pageTwo{
+    display: none;
+}
+.app_nav{
+    width:100%;
+    height:60px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    text-align: center;
+    position: relative;
+    background: #fff;
+    z-index: 99;
+    transition:top 0.25s linear;
+}
+.app_nav a{
+    display: inline-block;
+    width:171px;
+    height:32px;
+    line-height: 32px;
+    text-decoration: none;
+    margin-top:28px;
+    margin-right: 10px;
+    border-bottom: 2px solid #333;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman','宋体','SimSun','新宋体','NSimSun','华文细黑','STSong','STSongti-SC','\534E\6587\5B8B\4F53',serif;
+}
+.app_nav #app_make{
+    border-bottom: 2px solid #999;
+    color: #999;
+}
+.app_nav a:hover{
+    text-decoration: none;
+}
+#app_make:hover{
+    border-bottom: 2px solid #555;
+    color: #555;
+}
