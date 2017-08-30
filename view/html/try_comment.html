@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico"/>
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/shop.css">
+    <link rel="stylesheet" href="../../public/css/try.css">
+    <link rel="stylesheet" href="../../public/css/formember.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script>
+        $(function () {
+            $("#com_notice_btn").click(function () {
+                $(".try_please").css("display","block");
+            });
+            $(".shop_close_btn").click(function () {
+                $(".try_please").css("display","none");
+            });
+            $(".try_please_a").click(function () {
+                $(".try_please").css("display","none");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    {%include 'top.html'%}
+
+    {%block main%}
+    <div class="container">
+        <h2 id="try_first">优先试用</h2>
+        <div id="com_more">
+            <img src="../../public/image/shop_files/IMG1493vKd780500393.jpg"/>
+            <ul id="com_info">
+                <li><h4>凝脂玉面膜</h4></li>
+                <li style="background-color:#CAA58E;padding: 10px">
+                    <span>申请体验</span>
+                    <span>中奖者名单公告</span>
+                    <span>确认领取</span>
+                    <span>上传图片</span>
+                    <span>已完成</span>
+                    <span>17.05.03 ~ 17.05.15</span>
+                    <span>17.05.18</span>
+                    <span>17.05.22~17.05.26</span>
+                    <span>17.05.27 ~ 17.05.31</span>
+                    <span>17.05.31</span>
+                </li>
+                <li>
+                    <p>【白玉能量夜间滋养 清晨肌肤净澈透亮】</p>
+                    <p>凝聚珍贵白玉能量，于夜间，净澈修护，温润养颜；于清晨，绽现凝脂般澄净肌肤。</p>
+                </li>
+                <li>
+                    <p>【雪玉能量贮存技术】</p>
+                    <p>雪花秀雪玉能量贮存技术，将珍贵的白玉粉包裹于多孔微粒中，将珍稀玉石的净澈能量传递至肌肤，夜间吸附肌肤表面的污垢，绽现澄净光洁肌肤。</p>
+                </li>
+                <li>
+                    <p>【凝脂般柔滑澄净的肌肤】</p>
+                    <p>雪花秀雪玉能量贮存技术可提升白玉的养肤功效，吸附表面污垢的同时修护受损肌肤，清晨绽现凝脂般柔滑澄净肌肤。</p>
+                </li>
+                <li>
+                    <p class="com_info_p">申请人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>71</span></p>
+                    <p class="com_info_p">中奖人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>5</span></p>
+                    <a href="javascript:void(0);" class="for_more" id="com_notice_btn" style="transition:all 0.5s">公布中奖名单</a>
+                </li>
+            </ul>
+        </div>
+        <div id="com_word">
+            <h4>试用报告</h4>
+            <span>
+                <a href="#" style="color: black">按最新顺序排列</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#" style="color: #999999">按点击数排列</a>
+            </span>
+        </div>
+        <ul id="com_ul">
+            <li style="border-right: 1px solid #DDDDDD">
+                <img src="../../public/image/shop_files/IMG1495COQ895690928_100.png"/>
+                <h4>看得见的效果</h4>
+                <p>王宏芳&nbsp;&nbsp;|&nbsp;&nbsp;2017.05.27</p>
+                <a href="#">很意外，也很开心，竟然中了这次的优先免费试用。<br/>先说说产品包装吧：产品包裹的严严实实的，真的是里三层外三层：三层纸</a>
+                <a href="#" style="white-space: nowrap">盒，两层泡沫，一层填充物，收到时完美无瑕，赞！</a>
+            </li>
+            <li style="border-right: 1px solid #DDDDDD">
+                <img src="../../public/image/shop_files/IMG1495COQ895690928_100.png"/>
+                <h4>看得见的效果</h4>
+                <p>王宏芳&nbsp;&nbsp;|&nbsp;&nbsp;2017.05.27</p>
+                <a href="#">很意外，也很开心，竟然中了这次的优先免费试用。<br/>先说说产品包装吧：产品包裹的严严实实的，真的是里三层外三层：三层纸</a>
+                <a href="#" style="white-space: nowrap">盒，两层泡沫，一层填充物，收到时完美无瑕，赞！</a>
+            </li>
+            <li>
+                <img src="../../public/image/shop_files/IMG1495COQ895690928_100.png"/>
+                <h4>看得见的效果</h4>
+                <p>王宏芳&nbsp;&nbsp;|&nbsp;&nbsp;2017.05.27</p>
+                <a href="#">很意外，也很开心，竟然中了这次的优先免费试用。<br/>先说说产品包装吧：产品包裹的严严实实的，真的是里三层外三层：三层纸</a>
+                <a href="#" style="white-space: nowrap">盒，两层泡沫，一层填充物，收到时完美无瑕，赞！</a>
+            </li>
+        </ul>
+    </div>
+    <div class="try_please" id="com_notice">
+        <p class="try_big_p" style="margin-bottom: 30px">中奖者公布</p>
+        <strong style="color: #8D5635">“凝脂玉面膜”</strong>
+        <strong>恭喜您获得免费试用机会</strong>
+        <p class="com_notice_p">收到产品后，请不要忘记提交试用报告哦！</p>
+        <p class="com_notice_p">公布日期：2017年05月18日12:00</p>
+        <ul>
+            <li>王宏芳(*******1992)</li>
+            <li>汤淑丽(*******5566)</li>
+            <li>张&nbsp;&nbsp;&nbsp;倩(*******8409)</li>
+            <li>涂珊予(*******3454)</li>
+            <li>谢杏芳(*******2738)</li>
+            <li>宋可可(*******0099)</li>
+        </ul>
+        <a href="#" class="try_please_a for_more">确认</a>
+        <a href="javascript:void(0);" class="shop_close_btn"></a>
+    </div>
+    <a href="#" class="shop_block"></a>
+    <div class="footer">
+        {%include 'footer.html'%}
+    </div>
+</div>
+{%endblock%}
+</body>
+</html>

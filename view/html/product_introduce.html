@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 润致焕活肌底精华露</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/product_introduce.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+         #pwdwindow{
+             width: 400px;
+             height: 300px;
+             border: 1px solid #ccc;
+             padding: 20px;
+             padding-top: 100px;
+             position: fixed;
+             top:10%;
+             left: 40%;
+             z-index: 10005;
+             background: #fff;
+             display: none;
+         }
+        #close{
+            position: absolute;
+            right: 20px;
+            top:20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div id="PI_head">
+        <div class="container">
+            <div id="PI_title">
+                <h1>润致焕活肌底精华露</h1>
+                <p>First Care Activating Serum EX</p>
+                <a id="PI_see" href="#">查看详情 <i class="PI_ico"></i></a>
+            </div>
+            <div id="PI_img">
+                <img src="../../public/image/product_introduce_files/1494924906416.png"/>
+            </div>
+            <div id="PI_shadowimg">
+                <img src="../../public/image/product_introduce_files/bg_product_shadow.png"/>
+                <a href="#" title="分享到微博" id="PI_weiboico"></a>
+            </div>
+            <div id="PI_headBottom">
+                <ul>
+                    <li><span class="PI_stitle">功能</span><span>保湿/光泽</span></li><br/>
+                    <li>
+                        <span class="PI_stitle">容量</span>
+                        <button class="PI_choose">60ml</button>
+                    </li><br/>
+                    <li><span class="PI_stitle">价格</span><span id="PI_price">¥600</span></li>
+                </ul>
+                <button onclick="starBuy(1)" class="PI_buy">立即购买</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--固定导航-->
+        <div id="PI_nav">
+            <ul>
+                <li><a href="javascript:void(0)" class="PI_firsta PI_active">产品特点</a></li>
+                <li><a href="javascript:void(0)">使用方法/美容法</a></li>
+                <li><a href="javascript:void(0)">网友评分</a></li>
+            </ul>
+        </div>
+        <!--视频-->
+        <div id="PI_point">
+            <h2>滋盈凝萃复合体™调和肌肤平衡，润致焕活万众倾慕雪花秀润致焕活肌底精华露</h2>
+            <p>滋盈凝萃复合体™帮助回复肌肤五大平衡，令肌肤焕发健康盈润光泽的打底精华。</p>
+            <a href="#" title="video - 润致焕活肌底精华露">
+                <img src="../../public/image/product_introduce_files/img_feature_video_1.jpg" height="360" width="1100"/>
+                <i class="beauty_Splay"></i>
+            </a>
+        </div>
+        <!--产品特点-->
+        <div class="PI_special">
+            <img src="../../public/image/product_introduce_files/img_product_feature02.jpg" height="180" width="420"/>
+            <div class="PI_txt">
+                <span>延缓肌肤老化的滋盈凝萃复合体™</span>
+                <p>自古代文献中汲取灵感，从数千种草本原料中，历经数万次严苛试验和研究，最终甄选出实现肌肤平衡的5种珍贵原料，经过黄金时间的炮制提炼，终于凝炼成滋盈凝萃复合体™。</p>
+            </div>
+        </div>
+        <div class="PI_special">
+            <img src="../../public/image/product_introduce_files/img_product_feature03.jpg" height="180" width="420"/>
+            <div class="PI_txt">
+                <span>调和肌肤平衡，回复健康盈润肌肤光泽</span>
+                <p>核心成分滋盈凝萃复合体™帮助提升活力、弹力、通透力、修护力和滋养力，回复肌肤平衡，缔现由内至外散发的健康盈润光泽。</p>
+            </div>
+        </div>
+        <div class="PI_special">
+            <img src="../../public/image/product_introduce_files/img_product_feature01.jpg" height="180" width="420"/>
+            <div class="PI_txt">
+                <span>护肤第一步，帮助提升后续产品功效的打底精华</span>
+                <p>洁面后，在护肤第一步使用，打开肌肤吸收通道，提升后续产品的有效吸收。</p>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="btn special_btn">查看详情</a>
+        <hr/>
+        <div class="PI_use">
+            <h2>使用方法</h2>
+            <span>早、晚洁面后，在护肤第一步，于掌心按压2-3次，用指尖沿肌理轻柔均匀地涂抹。</span><br/>
+            <span>用温热的掌心包裹整个面部，帮助吸收。</span>
+            <h2>美容法</h2>
+            <img src="../../public/image/product_introduce_files/img_use_way_video.jpg" height="360" width="1100"/>
+            <br/><br/><br/>
+            <i class="beauty_Splay PI_usePlay"></i>
+            <hr/>
+        </div>
+        <!--达人推荐-->
+        <div class="PI_daren">
+            <b>达人推荐</b>
+            <hr/>
+            <img class="PI_imgico" src="../../public/image/product_introduce_files/1492152405627.jpg"/>
+        </div>
+        <!--网友评分-->
+        <div class="PI_daren">
+            <b>网友评分</b>
+            <div class="PI_graceHead">
+                <i class="PI_star"></i>
+                评分
+                <span class="PI_pers">100.0%</span>
+                <span class="PI_count">已有 <b>{{count}}</b> 人评价</span>
+            </div>
+        </div>
+        <div class="PI_box">
+            {%for comment in allcomment%}
+            <div class="PI_discuss">
+                <p class="PI_title">{{comment.title}}</p>
+                <p class="PI_content">{{comment.content}}</p>
+                <p class="PI_userDate"><span class="PI_user">{{comment.uname}}</span><span class="PI_date">{{comment.date|date('Y年m月d日')}}</span></p>
+            </div>
+            {%endfor%}
+            <br/>
+            <a onclick="showcomment()" class="btn special_btn PI_hover">发表评论</a><br/>
+            <div id="mz_page">
+                <strong>{{page}}</strong>
+                of
+                <span>{{pages}}</span>
+                <a href="/admin/product_introduce?page={{page-1}}">
+                    <
+                </a>
+                <a href="/admin/product_introduce?page={{page+1}}">
+                    >
+                </a>
+            </div>
+            <!--评论框-->
+            <div id="PI_comment">
+                <div id="comment_box">
+                    <div class="comment_border">
+                        <h3>创建评论</h3>
+                    </div>
+                    <div class="comment_border">
+                        <label for="title">标题</label>
+                        <input type="text" name="title" id="title"/>
+                    </div>
+                    <div class="comment_border">
+                        <label for="title">评分</label>
+                        <i></i>
+                    </div>
+                    <div class="comment_border">
+                        <label for="title" style="position: absolute; top: 70px;">评论</label>
+                        <textarea cols="30" rows="8" id="content"></textarea>
+                    </div>
+                    <a onclick="savecomment(1)" id="savecomment" class="btn special_btn PI_hover">保存</a>
+                    <a href="javascript:void(0)" id="PI_close" class="btn special_btn PI_hover">取消</a>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+        <!--建议搭配-->
+        <div class="PI_box">
+            <div class="PI_advice">
+                <h3>建议搭配使用的产品</h3>
+                <div class="PI_imgbox">
+                    <div class="PI_myimgbox">
+                        <div class="PI_img">
+                            <img src="../../public/image/product_introduce_files/1493288464519.png" height="240" width="220"/>
+                            <span>滋盈肌本润颜水</span>
+                        </div>
+                        <div class="PI_img">
+                            <img src="../../public/image/product_introduce_files/1493288464519.png" height="240" width="220"/>
+                            <span>滋盈肌本润颜乳</span>
+                        </div>
+                        <div class="PI_img">
+                            <img src="../../public/image/product_introduce_files/1494924906416.png" height="240" width="220" />
+                            <span>滋盈肌本赋活精华露</span>
+                        </div>
+                        <div class="PI_img">
+                            <img src="../../public/image/product_introduce_files/1493052789025.png" height="240" width="220"/>
+                            <span>滋盈肌本青春眼霜</span>
+                        </div>
+                        <div class="PI_img">
+                            <img src="../../public/image/product_introduce_files/1493052729739.png" height="240" width="220"/>
+                            <span>滋盈肌本紧致面霜</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="PI_btn PI_right"><</button>
+                <button class="PI_btn PI_left">></button>
+            </div>
+        </div>
+    </div>
+    <!-- 购买窗口 -->
+    <div id="PI_buy">
+        <div id="PI_buyBox">
+            <strong>润致焕活肌底精华露</strong><br/>
+            <span>First Care Activating Serum EX</span>
+            <hr class="PI_hr"/>
+            <select>
+                <option> 雪花秀润致焕活肌底精华露 60ml </option>
+            </select>
+            <hr/>
+            <select id="PI_buynum">
+                <option> 1 </option>
+            </select>
+            <span class="PI_span">(购买数量)</span>
+            <hr/>
+            <b>¥ 920</b>
+            <hr/>
+            <div id="PI_p">
+                <p>生产厂家 : Sulwhasoo</p>
+                <p>国家 : 韩国</p>
+            </div>
+            <hr/>
+            <p id="PI_btnbox">
+                <button class="PI_buybtn PI_on">心愿单</button>
+                <button class="PI_buybtn">立即购买</button>
+                <button class="PI_buybtn">放入购物车</button>
+            </p>
+            <i class="PI_close PI_close2"></i>
+        </div>
+    </div>
+    <div id="pwdwindow">
+    <p>
+        请输入支付密码：
+        <input type="password" name="pwd" id="pwd"/>
+    </p>
+    <button id="paysub" class="btn btn-default">确认</button>
+    <span id="close">X</span>
+</div>
+{%include 'footer.html'%}
+
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/product_introduce.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script>
+        function showcomment() {
+            $.post("/admin/showcomment",null,function (data) {
+                if(data==0){
+                    var flag=confirm("登录才能评论，是否登录");
+                    if(flag){
+                        window.location.href="/api/html/login";
+                    }else {
+                        window.location.reload();
+                    }
+                }else if(data==1){
+                    $("#PI_comment").css("display","block");
+                }
+            })
+        }
+        $("#PI_close").click(function () {
+            $("#PI_comment").css("display","none");
+        });
+        function savecomment(gid) {
+            var title=$("#title").val();
+            var content=$("#content").val();
+            console.log(title);
+            console.log(content);
+            if(title==""||content==""){
+                alert("标题和内容不能为空");
+            }else {
+                $.post("/admin/savecomment",{gid:gid,title:title,content:content},function (data) {
+                    if(data==0){
+                        alert("网络连接失败");
+                    }else if(data==1){
+                        alert("评论成功");
+                        window.location.reload();
+                    }
+                })
+            }
+        }
+        function starBuy(gid) {
+            $.post("/api/buyshow",{gid:gid},function (data) {
+                $("#PI_buy").css("display","block");
+                $("#PI_buy").html('<div id="PI_buyBox"><strong>'+data.gname+'</strong><br/> ' +
+                        '<span>'+data.genglish+'</span> ' +
+                        '<hr class="PI_hr"/> ' +
+                        '<select> ' +
+                        '<option> 雪花秀润致焕活肌底精华露 60ml </option> ' +
+                        '</select> ' +
+                        '<hr/> ' +
+                        '<select id="PI_buynum"> ' +
+                        '<option> 1 </option> ' +
+                        '<option> 2 </option> ' +
+                        '<option> 3 </option> ' +
+                        '</select> ' +
+                        '<span class="PI_span">(购买数量)</span> ' +
+                        '<hr/> ' +
+                        '<b>¥ '+data.price+'</b> ' +
+                        '<hr/> ' +
+                        '<div id="PI_p"> ' +
+                        '<p>生产厂家 : Sulwhasoo</p> ' +
+                        '<p>国家 : 韩国</p> ' +
+                        '</div> ' +
+                        '<hr/> ' +
+                        '<p id="PI_btnbox"> ' +
+                        '<button class="PI_buybtn PI_on">心愿单</button> ' +
+                        '<button id="paynow" class="PI_buybtn">立即购买</button> ' +
+                        '<button id="addshopcar" class="PI_buybtn">放入购物车</button> ' +
+                        '</p> ' +
+                        '<i class="PI_close PI_close2"></i>');
+                //关闭窗口的动画
+                $(".PI_close").click(function () {
+                    $("#PI_buy").css("display","none");
+                });
+                $(".PI_close").hover(function () {
+                    $(this).css({
+                        transform:"rotate(180deg)",
+                        transformOrigin: "center 90%",
+                        transition:"0.3s all ease"
+                    });
+                    $(this).removeClass("PI_close2");
+                },function () {
+                    $(this).css({
+                        transform:"rotate(-45deg)",
+                        transformOrigin: "center 90%",
+                        transition:"0.3s all ease"
+                    });
+                    $(this).addClass("PI_close2");
+                });
+                //加入购物车请求
+                $("#addshopcar").click(function () {
+                    $.post("/api/addshopcar",{gid:gid},function (data) {
+                        if(data==0){
+                            window.location.href="/api/html/login";
+                        }else if(data==2){
+                            var flag=confirm("添加成功，前往购物车吗？");
+                            if(flag){
+                                window.location.href="/api/html/shopCar";
+                            }else {
+                                window.location.reload();
+                            }
+                        }
+                    });
+                });
+                $("#paynow").click(function () {
+                    $("#pwdwindow").css("display","block");
+                    $("#close").click(function () {
+                        $("#pwdwindow").css("display","none");
+                    });
+                    $("#paysub").click(function () {
+                        var pwd=$("#pwd").val();
+                        var num=1;
+                        var obuy=data.price;
+                        $.post("/api/paynow",{gid:gid,pwd:pwd,num:num,obuy:obuy},function (data) {
+                            if(data==0){
+                                alert("密码输入错误，请重新输入");
+                            }else if(data==2){
+                                alert("支付成功");
+                                window.location.reload();
+                            }
+                        });
+                    });
+                });
+            });
+        }
+    </script>
+{%endblock%}
+</body>
+</html>

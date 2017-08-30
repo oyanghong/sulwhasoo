@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        #title{
+            padding: 5px 0 5px 20px;
+            color: #fff;
+            background: #aaa;
+            font-weight: normal;
+            font-size: 2em;
+            border-bottom: 1px solid #ddd;
+        }
+        .product_box{
+            padding-bottom: 1.81818182%;
+            margin-bottom: 1.81818182%;
+            border-bottom: 1px solid #eee;
+        }
+        .s_textbox{
+            float: right;
+            width: 790px;
+            padding: 3.63636364% 2.72727273% 0 2.72727273%;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div class="container">
+    <h2 id="title">产品搜索({{count}})</h2>
+    {%for goods in allgoods%}
+    <div class="product_box">
+        <img src='{{goods.pic}}' height="150" width="150"/>
+        <div class="s_textbox">
+            <strong> {{goods.gname}} </strong>
+            <p>{{goods.effect}}</p>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/product_introduce.js"></script>
+<script src="../../public/js/top.js"></script>
+{%endblock%}
+</body>
+</html>

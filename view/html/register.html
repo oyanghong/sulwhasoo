@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico"/>
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/shop.css">
+    <link rel="stylesheet" href="../../public/css/register.css">
+    <link rel="stylesheet" href="../../public/css/gotop.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+
+
+
+</head>
+<body>
+<a class="gotop" href="javascript:void(0)">
+    <img src="../../public/image/index_files/top.png" width="100%" height="100%"/>
+</a>
+    <div class="container-fluid">
+        {%include 'top.html'%}
+
+        {%block main%}
+        <div class="container">
+            <div id="reg_box">
+                <h1>请输入您的注册信息</h1>
+                <p>
+                    <label><span>*&nbsp;</span>姓名</label>
+                    <input type="text" size="35px" id="uname" name="uname" placeholder="姓名"/>
+                </p>
+                   <div class="reg_tishi"></div>
+                <p>
+                    <label><span>*</span>&nbsp;验证码</label>
+                    <span id="tcode">1234</span>
+                    <input type="text" size="15px" placeholder="请输入左侧校验码" name="test_code1" id="test_code1"/>
+                    <a href="javascript:void(0);" id="refresh" class="reg_btn_a">刷新</a>
+                </p>
+                    <div class="reg_tishi"></div>
+                <p>
+                    <label><span>*</span>&nbsp;电话号码</label>
+                    <input type="text" name="phone" size="35px" id="phone"/>
+                </p>
+                <p>
+                    <label><span>*</span>&nbsp;电子邮箱</label>
+                    <input type="email" name="email" size="35px" id="email"/>
+                </p>
+                    <div class="reg_tishi"></div>
+                <p>
+                    <label><span>*</span>&nbsp;设置密码</label>
+                    <input type="password" name="pwd" size="35px" id="pwd"/>
+                </p>
+                    <div class="reg_tishi"></div>
+                <p>
+                    <label><span>*</span>&nbsp;确认密码</label>
+                    <input type="password" name="pwdR" size="35px" id="pwdR"/>
+                </p>
+                <p>
+                    <label><span>*</span>&nbsp;接收消息</label>
+                    <input type="radio" name="ifagree" id="agree"/>同意
+                    <input type="radio" name="ifagree" id="disagree"/>不同意<br/>
+                    <label></label>&nbsp;<span>※ 如果您需要修改个人信息，请注册并登录后，在“我的页面”进行修改</span>
+                </p>
+                <p style="margin-top: 20px">
+                    <label><span>*</span>&nbsp;性别</label>
+                    <input type="radio" name="sex" value="女" id="women" checked/>女
+                    <input type="radio" name="sex" value="男" id="men"/>男
+                </p>
+                <p>
+                    <label><span>*</span>&nbsp;出生年月日</label>
+                    <input type="date" id="date" name="date"/>
+                </p>
+                <p id="reg_p_bot">
+                    <input type="checkbox" id="check"/>
+                    我已阅读并同意<a href="use_rule.html" target="_blank">雪花秀使用条款</a>和<a href="personal_state.html" target="_blank">隐私政策</a>的全部内容
+                </p>
+                <p style="margin-top: 40px">
+                    <button id="reg_sub" class="reg_a">注册</button>
+                    <a href="/" class="reg_a">主页</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            {%include 'footer.html'%}
+        </div>
+    </div>
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/gotop.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script src="../../public/js/register.js"></script>
+{%endblock%}
+</body>
+</html>

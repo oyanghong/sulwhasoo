@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/shopCar.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <link rel="stylesheet" href="../../public/css/magazine.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        #car_title{
+            margin-bottom: 50px;
+        }
+        #page_nav{
+            float: left;
+            width: 150px;
+            border-top:2px solid #ddd;
+        }
+        #car_box{
+            float: right;
+            width: 900px;
+        }
+        #srch_Box2{
+            margin-bottom: 60px;
+            padding: 15px 0 15px 20px;
+            background-color: #f9f9f9;
+            text-align: left;
+            color: #767676;
+        }
+        .culture_btn{
+            padding: 0 15px !important;
+            line-height: 24px !important;
+            font-size: 13px !important;
+            margin-bottom: 10px !important;
+        }
+        .culture_btn:hover{
+            background: #fff;
+            color: #333 !important;
+            text-decoration: underline !important;
+        }
+        .btn_on{
+            background: #000;
+            color: #fff;
+        }
+        .btn_on:hover{
+            background: #000;
+            color: #fff !important;
+            text-decoration: underline;
+        }
+        .date_inp{
+            width: 218px;
+            padding: 0 10px;
+            height: 40px;
+            line-height: 38px;
+            color: #666;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        .ver_web span{
+            display: inline-block;
+            position: relative;
+        }
+        .ver_web img{
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+        #pwdwindow{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            padding-top: 100px;
+            position: fixed;
+            top:10%;
+            left: 40%;
+            z-index: 100;
+            background: #fff;
+            display: none;
+        }
+        #close{
+            position: absolute;
+            right: 20px;
+            top:20px;
+            cursor: pointer;
+        }
+        .waitpay{
+            display: none;
+        }
+        .successorder{
+            display: none;
+        }
+        table td{
+            width:23%;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div class="container">
+    <div id="car_title">
+        订单/物流查询
+    </div>
+    <div id="page_nav">
+        <h2>我的页面</h2>
+        <p>我的订单</p>
+    </div>
+    <div id="car_box">
+        <div id="srch_Box2">
+            <div class="ver_web">
+                <a id="btn_all" class="btn culture_btn btn_on">全部</a>
+                <a id="btn_waipay" class="btn culture_btn">等待付款</a>
+                <a id="btn_paysuccess" class="btn culture_btn">付款成功</a><br/>
+                <span>
+                    <input type="text" class="date_inp"/>
+                    <img src="../../public/image/shopCar_files/icon_calender.gif" height="36" width="38"/>
+                </span> ~
+                <span>
+                    <input type="text" class="date_inp"/>
+                    <img src="../../public/image/shopCar_files/icon_calender.gif" height="36" width="38"/>
+                </span>
+                <button class="btn btn-default">查询</button>
+            </div>
+        </div>
+        <table class="allorder">
+            <thead>
+            <tr>
+                <th>成交时间</th>
+                <th>订单编号</th>
+                <th>商品名称/数量</th>
+                <th>合计金额</th>
+                <th>订单状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%for order in allorder%}
+            <tr>
+                <td>
+                    {{order.date|date('Y年m月d日')}}
+                </td>
+                <td>{{order.oid}}</td>
+                <td>
+                    <span>{{order.gname}}/{{order.num}}</span>
+                </td>
+                <td>{{order.obuy}}</td>
+                {%if order.state==1%}
+                <td><a id="payfor" onclick="payfor('{{order.oid}}')">等待付款</a></td>
+                {%elseif order.state==2%}
+                <td>付款成功</td>
+                {%endif%}
+            </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+        <table class="waitpay">
+            <thead>
+            <tr>
+                <th>成交时间</th>
+                <th>订单编号</th>
+                <th>商品名称/数量</th>
+                <th>合计金额</th>
+                <th>订单状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%for order in waitorder%}
+            <tr>
+                <td>
+                    {{order.date|date('Y年m月d日')}}
+                </td>
+                <td>{{order.oid}}</td>
+                <td>
+                    <span>{{order.gname}}/{{order.num}}</span>
+                </td>
+                <td>{{order.obuy}}</td>
+                <td><a id="payfor" onclick="payfor('{{order.oid}}')">等待付款</a></td>
+            </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+        <table class="successorder">
+            <thead>
+            <tr>
+                <th>成交时间</th>
+                <th>订单编号</th>
+                <th>商品名称/数量</th>
+                <th>合计金额</th>
+                <th>订单状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%for order in successorder%}
+            <tr>
+                <td>
+                    {{order.date|date('Y年m月d日')}}
+                </td>
+                <td>{{order.oid}}</td>
+                <td>
+                    <span>{{order.gname}}/{{order.num}}</span>
+                </td>
+                <td>{{order.obuy}}</td>
+                <td>付款成功</td>
+            </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+    </div>
+    <div id="mz_page">
+        <strong>{{page}}</strong>
+        of
+        <span>{{pages}}</span>
+        <a href="/api/html/mypage?page={{page+1}}">
+            >
+        </a>
+        <a href="/api/html/mypage?page={{page-1}}">
+            <
+        </a>
+    </div>
+    <div id="pwdwindow">
+       <p>
+           请输入支付密码：
+           <input type="password" name="pwd" id="pwd"/>
+       </p>
+        <button id="paysub" class="btn btn-default">确认</button>
+        <span id="close">X</span>
+    </div>
+</div>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/product_introduce.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+    function payfor(oid) {
+        $("#pwdwindow").css("display","block");
+        $("#close").click(function () {
+            $("#pwdwindow").css("display","none");
+        });
+        $("#paysub").click(function () {
+            var pwd=$("#pwd").val();
+            $.post("/api/payfor",{pwd:pwd,oid:oid},function (date) {
+                if(date==0){
+                    alert("密码不正确请重新输入！");
+                }else if(date==1){
+                    alert("支付成功");
+                    window.location.reload();
+                }
+            })
+        });
+    }
+    $("#btn_waipay").click(function () {
+        $(".culture_btn").removeClass("btn_on");
+        $(this).addClass("btn_on");
+        $(".allorder").css("display","none");
+        $(".successorder").css("display","none");
+        $(".waitpay").css("display","block");
+        $("#mz_page").css("display","none");
+    });
+    $("#btn_all").click(function () {
+        $(".culture_btn").removeClass("btn_on");
+        $(this).addClass("btn_on");
+        $(".allorder").css("display","block");
+        $(".successorder").css("display","none");
+        $(".waitpay").css("display","none");
+        $("#mz_page").css("display","block");
+    });
+    $("#btn_paysuccess").click(function () {
+        $(".culture_btn").removeClass("btn_on");
+        $(this).addClass("btn_on");
+        $(".allorder").css("display","none");
+        $(".successorder").css("display","block");
+        $(".waitpay").css("display","none");
+        $("#mz_page").css("display","none");
+    });
+</script>
+{%endblock%}
+</body>
+</html>

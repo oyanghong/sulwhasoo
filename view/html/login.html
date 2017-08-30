@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/top.js"></script>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div class="container">
+        <form class="login_wrap">
+            <h1>秀妍会会员登录</h1>
+            <input type="text" name="uname" id="uname" placeholder="账户(邮箱/手机)"><br>
+            <input style="margin-left: 15px;" type="password" name="pwd" id="pwd" placeholder="密码">
+            <br><span>*由6-12位数字和英文字母组成</span><br>
+            <input type="button" style="width: 400px;height: 61px;" id="btn_login" value="登录"/>
+            <p class="hr" style="margin-left: 311px; width: 400px;height:60px"></p>
+            <a href="#">忘记密码</a><a href="/api/html/register"><label>|</label> 如果您还没有雪花秀账号，请先注册</a>
+        </form>
+    </div>
+{%include 'footer.html'%}
+
+    <script>
+        $(function(){
+            $("input").hover(function(){
+                $(this).css("border","1px solid #555");
+                if($(this).attr("type")=="button"){
+                    $(this).css({
+                        "color":"#000",
+                        "border":"1px solid #000",
+                        "background":"#fff"
+                    });
+                }
+            },function(){
+                $(this).css("border","1px solid #ccc");
+                if($(this).attr("type")=="button"){
+                    $(this).css({
+                        "color":"#fff",
+                        "background":"#000"
+                    });
+                }
+            });
+            $("input").focus(function(){
+                $(this).css({
+                    "border":"1px solid #555",
+                    "outline":"none"
+                });
+            });
+            //登录请求
+            $("#btn_login").click(function () {
+                var uname=$("#uname").val();
+                var pwd=$("#pwd").val();
+                $.post("/api/user/userLogin",{uname:uname,pwd:pwd},function (data) {
+                    if(data==1){
+                        window.location.href='/';
+                    }else {
+                        alert("账号或密码错误");
+                        $("#uname").val("");
+                        $("#pwd").val("");
+                    }
+                })
+            });
+        });
+    </script>
+{%endblock%}
+</body>
+</html>

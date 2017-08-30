@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/protection.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <link rel="stylesheet" href="../../public/css/product_introduce.css">
+
+    <style>
+        #pwdwindow{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            padding-top: 100px;
+            position: fixed;
+            top:10%;
+            left: 40%;
+            z-index: 10005;
+            background: #fff;
+            display: none;
+        }
+        #close{
+            position: absolute;
+            right: 20px;
+            top:20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <section>
+        <ul class="protection" style="height: 700px">
+            {%for goods in allgoods%}
+            <li>
+                <img src='{{goods.pic}}' height="263" width="263"/>
+                <strong>{{goods.gname}}</strong>
+                <span>¥ {{goods.price}}</span>
+                <a class="cos_buy" onclick="starBuy('{{goods.gid}}')">立即购买</a>
+                <span class="cos_tect"></span>
+            </li>
+            {%endfor%}
+        </ul>
+        <div id="PI_buy">
+            <!--<div id="PI_buyBox">-->
+            <!--<strong>润致焕活肌底精华露</strong><br/>-->
+            <!--<span>First Care Activating Serum EX</span>-->
+            <!--<hr class="PI_hr"/>-->
+            <!--<select>-->
+            <!--<option> 雪花秀润致焕活肌底精华露 60ml </option>-->
+            <!--</select>-->
+            <!--<hr/>-->
+            <!--<select id="PI_buynum">-->
+            <!--<option> 1 </option>-->
+            <!--</select>-->
+            <!--<span class="PI_span">(购买数量)</span>-->
+            <!--<hr/>-->
+            <!--<b>¥ 920</b>-->
+            <!--<hr/>-->
+            <!--<div id="PI_p">-->
+            <!--<p>生产厂家 : Sulwhasoo</p>-->
+            <!--<p>国家 : 韩国</p>-->
+            <!--</div>-->
+            <!--<hr/>-->
+            <!--<p id="PI_btnbox">-->
+            <!--<button class="PI_buybtn PI_on">心愿单</button>-->
+            <!--<button class="PI_buybtn">立即购买</button>-->
+            <!--<button class="PI_buybtn">放入购物车</button>-->
+            <!--</p>-->
+            <!--<i class="PI_close PI_close2"></i>-->
+            <!--</div>-->
+        </div>
+        <div id="pwdwindow">
+            <p>
+                请输入支付密码：
+                <input type="password" name="pwd" id="pwd"/>
+            </p>
+            <button id="paysub" class="btn btn-default">确认</button>
+            <span id="close">X</span>
+        </div>
+    </section>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/js/cosmetics.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+    function starBuy(gid) {
+        $.post("/api/buyshow",{gid:gid},function (data) {
+            $("#PI_buy").css("display","block");
+            $("#PI_buy").html('<div id="PI_buyBox"><strong>'+data.gname+'</strong><br/> ' +
+                    '<span>'+data.genglish+'</span> ' +
+                    '<hr class="PI_hr"/> ' +
+                    '<select> ' +
+                    '<option> 雪花秀润致焕活肌底精华露 60ml </option> ' +
+                    '</select> ' +
+                    '<hr/> ' +
+                    '<select id="PI_buynum"> ' +
+                    '<option> 1 </option> ' +
+                    '<option> 2 </option> ' +
+                    '<option> 3 </option> ' +
+                    '</select> ' +
+                    '<span class="PI_span">(购买数量)</span> ' +
+                    '<hr/> ' +
+                    '<b>¥ '+data.price+'</b> ' +
+                    '<hr/> ' +
+                    '<div id="PI_p"> ' +
+                    '<p>生产厂家 : Sulwhasoo</p> ' +
+                    '<p>国家 : 韩国</p> ' +
+                    '</div> ' +
+                    '<hr/> ' +
+                    '<p id="PI_btnbox"> ' +
+                    '<button class="PI_buybtn PI_on">心愿单</button> ' +
+                    '<button id="paynow" class="PI_buybtn">立即购买</button> ' +
+                    '<button id="addshopcar" class="PI_buybtn">放入购物车</button> ' +
+                    '</p> ' +
+                    '<i class="PI_close PI_close2"></i>');
+            //关闭窗口的动画
+            $(".PI_close").click(function () {
+                $("#PI_buy").css("display","none");
+            });
+            $(".PI_close").hover(function () {
+                $(this).css({
+                    transform:"rotate(180deg)",
+                    transformOrigin: "center 90%",
+                    transition:"0.3s all ease"
+                });
+                $(this).removeClass("PI_close2");
+            },function () {
+                $(this).css({
+                    transform:"rotate(-45deg)",
+                    transformOrigin: "center 90%",
+                    transition:"0.3s all ease"
+                });
+                $(this).addClass("PI_close2");
+            });
+            //加入购物车请求
+            $("#addshopcar").click(function () {
+                $.post("/api/addshopcar",{gid:gid},function (data) {
+                    if(data==0){
+                        window.location.href="/api/html/login";
+                    }else if(data==2){
+                        var flag=confirm("添加成功，前往购物车吗？");
+                        if(flag){
+                            window.location.href="/api/html/shopCar";
+                        }else {
+                            window.location.reload();
+                        }
+                    }
+                });
+            });
+            $("#paynow").click(function () {
+                $("#pwdwindow").css("display","block");
+                $("#close").click(function () {
+                    $("#pwdwindow").css("display","none");
+                });
+                $("#paysub").click(function () {
+                    var pwd=$("#pwd").val();
+                    var num=1;
+                    var obuy=data.price;
+                    $.post("/api/paynow",{gid:gid,pwd:pwd,num:num,obuy:obuy},function (data) {
+                        if(data==0){
+                            alert("密码输入错误，请重新输入");
+                        }else if(data==2){
+                            alert("支付成功");
+                            window.location.reload();
+                        }
+                    });
+                });
+            });
+        });
+    }
+</script>
+{%endblock%}
+</body>
+</html>

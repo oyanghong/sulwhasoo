@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico"/>
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/shop.css">
+    <link rel="stylesheet" href="../../public/css/try.css">
+    <link rel="stylesheet" href="../../public/css/formember.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script>
+        $(function () {
+            $("#try_please_btn").click(function () {
+                $(".try_please").css("display","block");
+            });
+            $(".shop_close_btn").click(function () {
+                $(".try_please").css("display","none");
+            });
+            $(".try_please_a").click(function () {
+                $(".try_please").css("display","none");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    {%include 'top.html'%}
+
+    {%block main%}
+    <div class="container" id="try">
+        <h2 id="try_first">优先试用</h2>
+        <ul id="try_bar">
+            <li>
+                <img src="../../public/image/shop_files/bg_method_application_01.gif"/>
+                <div class="try_bar_word">
+                    <p>01</p>
+                    <p>明星产品、人气新品优先试用。</p>
+                </div>
+            </li>
+            <li>
+                <img src="../../public/image/shop_files/bg_method_application_02.gif"/>
+                <div class="try_bar_word">
+                    <p>02</p>
+                    <p>官网会员独享。</p>
+                </div>
+            </li>
+            <li style="width: 150px;padding: 0">
+                <a href="javascript:void(0);" class="for_more" id="try_please_btn">申请方法</a>
+            </li>
+        </ul>
+        <h4 class="try_word">进行中的申领试用活动</h4>
+        <p id="try_expect">即将开始 敬请期待。</p>
+        <h4 class="try_word">已结束的申领活动</h4>
+        <table id="try_table">
+            <tr>
+                <td class="try_br">
+                    <div class="try_goods_left">
+                        <a href="#"></a>
+                        <p>终止</p>
+                    </div>
+                    <div class="try_goods_right">
+                        <a href="#" class="try_color5">凝脂玉面膜</a>
+                        <p>申请人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>71</span></p>
+                        <p>中奖人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>5</span></p>
+                    </div>
+                </td>
+                <td>
+                    <ul class="try_ul_hot">
+                        <li class="try_ul_fir">热门评论
+                            <a href="/admin/try/try_comment">+</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">王宏芳</span>|&nbsp;&nbsp;
+                            <a href="#">看得见的效果</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">张&nbsp;&nbsp;&nbsp;倩</span>|&nbsp;&nbsp;
+                            <a href="#">玉养肌肤，肤若凝脂</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">汤淑丽</span>|&nbsp;&nbsp;
+                            <a href="#">肌肤水润、亮白！</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="try_br">
+                    <div class="try_goods_left">
+                        <a href="#"></a>
+                        <p>终止</p>
+                    </div>
+                    <div class="try_goods_right">
+                        <a href="#" class="try_color5">凝脂玉面膜</a>
+                        <p>申请人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>71</span></p>
+                        <p>中奖人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>5</span></p>
+                    </div>
+                </td>
+                <td>
+                    <ul class="try_ul_hot">
+                        <li class="try_ul_fir">热门评论
+                            <a href="/admin/try/try_comment">+</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">王宏芳</span>|&nbsp;&nbsp;
+                            <a href="#">看得见的效果</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">张&nbsp;&nbsp;&nbsp;倩</span>|&nbsp;&nbsp;
+                            <a href="#">玉养肌肤，肤若凝脂</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">汤淑丽</span>|&nbsp;&nbsp;
+                            <a href="#">肌肤水润、亮白！</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="try_br">
+                    <div class="try_goods_left">
+                        <a href="#"></a>
+                        <p>终止</p>
+                    </div>
+                    <div class="try_goods_right">
+                        <a href="#" class="try_color5">凝脂玉面膜</a>
+                        <p>申请人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>71</span></p>
+                        <p>中奖人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>5</span></p>
+                    </div>
+                </td>
+                <td>
+                    <ul class="try_ul_hot">
+                        <li class="try_ul_fir">热门评论
+                            <a href="/admin/try/try_comment">+</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">王宏芳</span>|&nbsp;&nbsp;
+                            <a href="#">看得见的效果</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">张&nbsp;&nbsp;&nbsp;倩</span>|&nbsp;&nbsp;
+                            <a href="#">玉养肌肤，肤若凝脂</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">汤淑丽</span>|&nbsp;&nbsp;
+                            <a href="#">肌肤水润、亮白！</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="try_br">
+                    <div class="try_goods_left">
+                        <a href="#"></a>
+                        <p>终止</p>
+                    </div>
+                    <div class="try_goods_right">
+                        <a href="#" class="try_color5">凝脂玉面膜</a>
+                        <p>申请人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>71</span></p>
+                        <p>中奖人数&nbsp;&nbsp;|&nbsp;&nbsp;<span>5</span></p>
+                    </div>
+                </td>
+                <td>
+                    <ul class="try_ul_hot">
+                        <li class="try_ul_fir">热门评论
+                            <a href="/admin/try/try_comment">+</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">王宏芳</span>|&nbsp;&nbsp;
+                            <a href="#">看得见的效果</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">张&nbsp;&nbsp;&nbsp;倩</span>|&nbsp;&nbsp;
+                            <a href="#">玉养肌肤，肤若凝脂</a>
+                        </li>
+                        <li>
+                            <span class="try_color5">汤淑丽</span>|&nbsp;&nbsp;
+                            <a href="#">肌肤水润、亮白！</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div >
+    <div class="try_please">
+        <p class="try_big_p">申请方法</p>
+        <p id="try_please_p2">申请体验方法</p>
+        <ul id="please_ul">
+            <li>注册会员并登录&nbsp;&nbsp;>&nbsp;&nbsp;申请体验&nbsp;&nbsp;>&nbsp;&nbsp;完善并确认个人信息&nbsp;&nbsp;>&nbsp;&nbsp;中奖名单发布&nbsp;&nbsp;>&nbsp;&nbsp;产品发送</li>
+            <li>&nbsp;&nbsp;>&nbsp;&nbsp;体验产品&nbsp;&nbsp;>&nbsp;&nbsp;分享体验心得</li>
+        </ul>
+        <div id="please_info">
+            <p>体验规则</p>
+            <ol>
+                <li>注册为雪花秀官网会员方可申领体验产品。</li>
+                <li>申领成功后，体验产品将以快递方式发送给被抽中的会员。</li>
+                <li>中奖会员须在快递发出后的20天之内，上传带图文的体验心得。</li>
+                <li>中奖却未在规定时间内分享体验心得的会员，将失去今后申请体验的资格。</li>
+                <li>体验心得被列为精华心得的会员，获得其它体验产品的机率更高。</li>
+            </ol>
+        </div>
+        <a href="javascript:void(0);" class="try_please_a for_more">确认</a>
+        <a href="javascript:void(0);" class="shop_close_btn"></a>
+    </div>
+    <a href="#" class="shop_block"></a>
+    <div class="footer">
+        {%include 'footer.html'%}
+
+    </div>
+</div>
+{%endblock%}
+</body>
+</html>

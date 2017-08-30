@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/red_index.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/top.js"></script>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div id="rec_5">
+    <div class=" rec_5 rec_5top">
+        <img src="../../public/image/rec_files/rec5_1.jpg"/>
+        <a href="/admin/product_introduce" target="_blank" id="rec_5topa"></a>
+    </div>
+    <div class=" rec_5 rec_5center">
+        <div id="rec_5play">
+            <embed width="473px" height="293px" src="http://player.youku.com/player.php/sid/XMjYxNDQ0NzA5Mg==/isAutoPlay/false/isShowRelatedVideo/false/partnerid/5e97451fc90ec8cc/v.swf"></embed>
+            <img src="../../public/image/rec_files/rec5_4.jpg" height="293" width="473"/>
+            <i class="icon-play"></i>
+        </div>
+        <img src="../../public/image/rec_files/rec5_2.jpg" height="330" width="1100"/>
+    </div>
+    <div class=" rec_5 rec_5bottom">
+        <img src="../../public/image/rec_files/rec5_3.jpg"/>
+        <a href="/admin/product_introduce2" target="_blank" class="link link1"></a>
+        <a href="/admin/product_introduce" target="_blank" class="link link2"></a>
+        <a href="/admin/product_introduce2" target="_blank" class="link link3"></a>
+        <a href="/admin/product_introduce" target="_blank" class="link link4"></a>
+    </div>
+</div>
+{%include 'footer.html'%}
+<script>
+    $(function(){
+        $("#rec_5play").click(function(){
+            $("#rec_5play embed").css("display","block");
+            $("#rec_5play img").css("display","none");
+            $(".icon-play").css("display","none");
+        });
+    });
+</script>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/protection.css">
+
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../public/css/product.css">
+
+    <style>
+        .Nonum{
+            width: 40px;
+            height: 40px;
+            background: #786557;
+            position: absolute;
+            top:5px;
+            left: 5px;
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div class="header">
+        <div class="app_up">
+            <h1>产品使用顺序</h1>
+            <p>选择产品后点击'确认'按钮，就可查看产品的使用顺序.</p>
+            <button onclick="compare()">确认</button>
+        </div>
+        <div class="app_down">
+            <h1>产品使用顺序</h1>
+            <p>选择产品后点击'确认'按钮，<br/>就可查看产品的使用顺序.</p>
+            <button onclick="compare()">确认</button>
+        </div>
+    </div>
+    <div class="app_nav">
+        <a id="app_care">Skin Care</a>
+        <a id="app_make">Make-Up</a>
+    </div>
+    <ul class="app_page app_pageOne">
+        <li>
+        <div abc="1" class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458883409676.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>洁面</span>
+                    <span class="app_innerSpan">顺行柔和洁颜油</span>
+                    <span>洁净/角质护理</span>
+                </div>
+            </div>
+        </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+    </li><li>
+            <div abc="2" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1466475494289 (1).png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>洁面</span>
+                        <span class="app_innerSpan">顺行柔和洁面泡沫</span>
+                        <span>洁净/角质护理</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="3" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1489975923114.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>洁面</span>
+                        <span class="app_innerSpan">宫中蜜皂</span>
+                        <span>洁净/角质护理</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="4" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1494924906416.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>打底精华</span>
+                        <span class="app_innerSpan">润致焕活肌底精华露</span>
+                        <span>保湿/光泽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="5" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493208253921.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>化妆水</span>
+                        <span class="app_innerSpan">滋盈肌本润颜水</span>
+                        <span>保湿/光泽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="6" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493288464519.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>乳液</span>
+                        <span class="app_innerSpan">滋盈肌本润颜乳</span>
+                        <span>保湿/光泽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="7" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493103541700.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>精华</span>
+                        <span class="app_innerSpan">滋盈肌本赋活精华露</span>
+                        <span>保湿/光泽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="8" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493052789025.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>眼部护理</span>
+                        <span class="app_innerSpan">滋盈肌本青春眼霜</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Nonum Nonum1">1</div>
+            <div class="Nonum Nonum2">2</div>
+        </li>
+        <li>
+            <div abc="9" class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493052729739.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>面霜</span>
+                        <span class="app_innerSpan">滋盈肌本紧致面霜</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1458882984988.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>精华</span>
+                        <span class="app_innerSpan">滋盈生真本油</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1492417355749.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>精华</span>
+                    <span class="app_innerSpan">滋如珍人参凝时精华露</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493184309391.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>眼部护理</span>
+                    <span class="app_innerSpan">滋盈生人参紧致修护眼霜</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1497315428652.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面霜</span>
+                    <span class="app_innerSpan">滋盈生人参焕颜修护霜(盈润型)</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1499135689221.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面霜</span>
+                    <span class="app_innerSpan">滋盈生人参焕颜修护霜(滋养型）</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1499740457053.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>化妆水</span>
+                    <span class="app_innerSpan">臻秀修护活颜水</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458883185317.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>乳液</span>
+                    <span class="app_innerSpan">臻秀修护活颜乳</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458883226268.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>精华</span>
+                    <span class="app_innerSpan">臻秀修护活颜精华露</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1492749936889.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>眼部护理</span>
+                    <span class="app_innerSpan">臻秀修护多效眼霜</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1458883296249.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>面霜</span>
+                        <span class="app_innerSpan">臻秀修护活颜霜</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1466468502902.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>洁面</span>
+                    <span class="app_innerSpan">滋晶焕颜白参磨砂啫喱</span>
+                    <span>洁净/角质护理</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493054374725.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>洁面</span>
+                    <span class="app_innerSpan">滋晶洁面乳</span>
+                    <span>洁净/角质护理</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493054398362.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>化妆水</span>
+                    <span class="app_innerSpan">滋晶雪肤美白水</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493183078329.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>乳液</span>
+                    <span class="app_innerSpan">滋晶雪肤美白乳</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493183294656.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>精华</span>
+                    <span class="app_innerSpan">滋晶雪肤美白淡斑精华露</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493048336311.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>精华</span>
+                    <span class="app_innerSpan">滋晶雪肤美白精华露</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493342748975.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>眼部护理</span>
+                    <span class="app_innerSpan">滋晶雪肤美白修护眼霜</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493183499902.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面霜</span>
+                    <span class="app_innerSpan">滋晶雪肤美白霜</span>
+                    <span>美白</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493207551640.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>面膜</span>
+                        <span class="app_innerSpan">滋晶雪肤美白面膜</span>
+                        <span>美白</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493054076858.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>防晒</span>
+                    <span class="app_innerSpan">滋晶雪肤美白防护乳霜</span>
+                    <span>美白, 防晒</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1478066102916.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>化妆水</span>
+                    <span class="app_innerSpan">水律莹润舒缓柔肤水</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493105287059.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>精华</span>
+                    <span class="app_innerSpan">水律莹润提拉精华露</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1479272684148.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>眼部护理</span>
+                    <span class="app_innerSpan">水律莹润舒缓眼部精华露</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493032348965.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面霜</span>
+                    <span class="app_innerSpan">水律莹润舒缓面霜</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458882352667.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>防晒</span>
+                    <span class="app_innerSpan">水律莹润提拉防晒霜</span>
+                    <span>防晒</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1479711018310.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>特殊护理</span>
+                    <span class="app_innerSpan">水律莹润舒缓喷雾</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458883337210.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面霜</span>
+                    <span class="app_innerSpan">多馠雪焕妍青春霜</span>
+                    <span>延缓衰老</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493351338146.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>精华</span>
+                        <span class="app_innerSpan">明祎草本精华液</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458885048447.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面膜</span>
+                    <span class="app_innerSpan">睿率按摩乳霜</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1479717232134.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面膜</span>
+                    <span class="app_innerSpan">玉璨净柔面膜</span>
+                    <span>洁净/角质护理</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1484725352550.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面膜</span>
+                    <span class="app_innerSpan">与润修护睡眠面膜</span>
+                    <span>保湿/光泽</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458883409676.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面膜</span>
+                    <span class="app_innerSpan">清润舒缓面膜</span>
+                    <span>补水/舒缓</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493344318090.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>面膜</span>
+                    <span class="app_innerSpan">凝脂玉面膜</span>
+                    <span>洁净/角质护理</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458885102137.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>身体护理</span>
+                    <span class="app_innerSpan">妍闪身体菁华露</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458885158528.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>身体护理</span>
+                    <span class="app_innerSpan">妍闪护手霜</span>
+                    <span>保湿/光泽</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/-1.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>身体护理</span>
+                    <span class="app_innerSpan">肌本滋养膏</span>
+                    <span>保湿/光泽</span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1474592108408.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>身体护理</span>
+                        <span class="app_innerSpan">妍闪丰盈润泽身体乳霜</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493259563016.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>面膜</span>
+                        <span class="app_innerSpan">丽珉多效焕颜面膜</span>
+                        <span>延缓衰老</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493054110635.png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>亮润露</span>
+                        <span class="app_innerSpan">美颜修容亮润露</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="app_page app_pageTwo">
+        <li>
+            <div class="app_liBox">
+                <div class="app_li app_liImg">
+                    <img src="../../public/image/app_flies/1493051010435 (1).png" height="150" width="150"/>
+                    <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+                </div>
+                <div class="app_li app_liText">
+                    <div class="app_liInner">
+                        <span>粉底</span>
+                        <span class="app_innerSpan">致美润白气垫粉底液 SPF30+/PA+++</span>
+                        <span>多效合一   </span>
+                    </div>
+                </div>
+            </div>
+        </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1487138246670.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉饼</span>
+                    <span class="app_innerSpan">采淡柔滑粉饼</span>
+                    <span>自然   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1481776734994.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>唇部护理</span>
+                    <span class="app_innerSpan">肌本护唇膏</span>
+                    <span>多效合一   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1487138214184.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉饼</span>
+                    <span class="app_innerSpan">滋晶美白防晒粉饼</span>
+                    <span>美白   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458885655280.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉底</span>
+                    <span class="app_innerSpan">采淡柔滑粉底液</span>
+                    <span>自然   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493123610668.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉底</span>
+                    <span class="app_innerSpan">滋晶美白精华修容霜</span>
+                    <span>美白   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493184691262.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>隔离霜</span>
+                    <span class="app_innerSpan">采淡柔滑底霜</span>
+                    <span>自然   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/-1 (1).png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉底</span>
+                    <span class="app_innerSpan">采淡致美修瑕膏</span>
+                    <span>自然   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1458885901598.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉饼</span>
+                    <span class="app_innerSpan">丝斓多效粉饼</span>
+                    <span>复合抗老型   </span>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493055317905.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>唇部护理</span>
+                    <span class="app_innerSpan">肌本柔润护唇膏</span>
+                    <span>多效_彩妆   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493259199108.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉底</span>
+                    <span class="app_innerSpan">采淡致美气垫粉底液</span>
+                    <span>多效合一   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493172348376.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span></span>
+                    <span class="app_innerSpan">莹彩腮红</span>
+                    <span>多效_彩妆   </span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493207344263.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>粉饼</span>
+                    <span class="app_innerSpan">雪花秀丝斓修容粉饼</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493188540670.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>隔离霜</span>
+                    <span class="app_innerSpan">精致无瑕遮瑕膏</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493207937188.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>隔离霜</span>
+                    <span class="app_innerSpan">彩妆平衡焕肤精华乳SPF25/PA++</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </li><li>
+        <div class="app_liBox">
+            <div class="app_li app_liImg">
+                <img src="../../public/image/app_flies/1493051010435.png" height="150" width="150"/>
+                <div class="app_check"><i class="glyphicon glyphicon-ok"></i><span>SELECTED</span></div>
+            </div>
+            <div class="app_li app_liText">
+                <div class="app_liInner">
+                    <span>打底精华</span>
+                    <span class="app_innerSpan">润致焕活肌底精华露</span>
+                    <span>保湿/光泽</span>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/js/application.js"></script>
+<script src="../../public/js/top.js"></script>
+    <script>
+        function compare() {
+            var a;
+            var b;
+            var index1;
+            var index2;
+            for(var i=37;i<($("li").length);i++){
+                if($("li").eq(i).attr("onoff")){
+                    if(a==undefined){
+                        a=$("li").eq(i).find(".app_liBox").attr("abc");
+                        index1=i;
+                        console.log(a+"----"+index1);
+                    }else {
+                        b=$("li").eq(i).find(".app_liBox").attr("abc");
+                        index2=i;
+                        console.log(b+"----"+index2);
+                    }
+                }
+            }
+            if(a>b){
+                $("li").eq(index1).find(".Nonum1").css("display","block");
+                $("li").eq(index2).find(".Nonum2").css("display","block");
+            }else {
+                console.log($("li").eq(index2));
+                $("li").eq(index2).find(".Nonum1").css("display","block");
+                $("li").eq(index1).find(".Nonum2").css("display","block");
+            }
+        }
+    </script>
+{%endblock%}
+</body>
+</html>

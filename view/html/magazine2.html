@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo SPA - 雪花秀SPA-雪花秀(Sulwhasoo)中国官网</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/magazine.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div class="container">
+    <div id="mz_head">
+        <h1>雪花秀杂志</h1>
+        <p>以追求平衡与和谐的品牌哲学为基础，提供关于美容、音乐、美术等各种方面的最新信息，致力于文化交流与传播，是雪花秀的高档文化杂志。</p>
+    </div>
+    <div id="mz_select">
+        <div class="dropdown">
+            <button id="mz_myselect" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Vol.79 May/June 2017
+                <i class="mz_down"></i>
+            </button>
+            <ul id="mz_menu" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="is-current is-active"><a href="/cn/zh/experience/magazine/vol79.html">Vol.79 May/June 2017</a></li>
+                <li><a href="##">Vol.78 March/April 2017</a></li>
+                <li><a href="##">Vol.77 January/February 2017</a></li>
+                <li><a href="##">Vol.76 November/December 2016</a></li>
+                <li><a href="##">Vol.75 September/October 2016</a></li>
+                <li><a href="">Vol.74 July/August 2016</a></li>
+                <li><a href="">Vol.73 May/June 2016</a></li>
+                <li><a href="">Vol.72 March/April 2016</a></li>
+                <li><a href="">Vol.71 January/February 2016</a></li>
+                <li><a href="">Vol.70 November/December 2015</a></li>
+                <li><a href="">Vol.69 September/October 2015</a></li>
+                <li><a href="">Vol.68 July/August 2015</a></li>
+                <li><a href="">Vol.67 May/June 2015</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mz_text">
+        <img src="../../public/image/magazine_files/1498191113623.jpg" width="100%"/>
+        <p>雪花宝鉴</p>
+        <span>如画般和谐的茶与茶果</span>
+    </div>
+    <div class="mz_text">
+        <img src="../../public/image/magazine_files/1499214667925.jpg" width="100%"/>
+        <p>美丽游记</p>
+        <span>甜蜜的人生，甜蜜的旅行</span>
+    </div>
+    <div class="mz_text">
+        <img src="../../public/image/magazine_files/1499214952009.jpg" width="100%"/>
+        <p>讲述雪花秀</p>
+        <span>每一天都充满润嫩光泽的活力</span>
+    </div>
+    <div class="mz_text mz_textRight">
+        <img src="../../public/image/magazine_files/1499215397052.jpg" width="100%"/>
+        <p>雪花空间</p>
+        <span>为尊贵的人提供承载心意的雪花秀包装</span>
+    </div>
+    <div class="mz_text">
+        <img src="../../public/image/magazine_files/1499216191777.jpg" width="100%"/>
+        <p>韩国的美丽</p>
+        <span>用珍贵成就美丽</span>
+    </div>
+    <div id="mz_page">
+        <strong>2</strong>
+        of
+        <span>2</span>
+        <a href="/html/special/magazine">
+            <
+        </a>
+    </div>
+</div>
+{%include 'footer.html'%}
+
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+    var flag=false;
+    $("#mz_myselect").click(function () {
+        if(flag){
+            $(".dropdown").removeClass("open");
+            flag=false;
+        }else {
+            $(".dropdown").addClass("open");
+            flag=true;
+        }
+    });
+</script>
+{%endblock%}
+</body>
+</html>

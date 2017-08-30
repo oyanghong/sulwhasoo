@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 韓方美容法</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/beauty.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        .beauty_text{
+            background: url("../../public/image/beauty_files/big.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div class="container">
+    <div class="beauty_img">
+        <a href="javascript:void (0)" onclick="showembed()" class="beauty_text">
+            <i class="beauty_play"></i>
+            <h1 style="font-family: '宋体'">滋盈生人参凝萃焕颜修护霜</h1>
+            <p>Beauty Rituals</p>
+        </a>
+        <embed width="100%" height="100%" src="http://player.youku.com/player.php/sid/XMjYxMjE4MzI3Mg==/isAutoPlay/false/isShowRelatedVideo/false/partnerid/5e97451fc90ec8cc/v.swf"></embed>
+    </div>
+    <div class="beauty_list">
+        <hr/>
+        <span class="beauty_title">雪花秀美容法</span>
+        <a class="beauty_movies" href="/html/special/beauty">
+            <img src="../../public/image/beauty_files/1440724622327(1).jpg" width="100%"/>
+            <i class="beauty_Splay"></i>
+            <span>韩方美容法</span>
+            <p>通过和谐与均衡的智慧缔现肌肤天生的润泽，请通过雪花秀创新美容法体验调和之美。</p>
+        </a>
+        <a class="beauty_movies" href="">
+            <img src="../../public/image/beauty_files/1440718152940.jpg" width="100%"/>
+            <i class="beauty_Splay"></i>
+            <span>滋盈生人参凝萃焕颜修护霜</span>
+            <p>滋盈生人参凝萃焕颜修护霜，抵御肌肤老化的力量源泉</p>
+        </a>
+    </div>
+</div>
+{%include 'footer.html'%}
+
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+    $(".beauty_movies").hover(function () {
+        $(".beauty_movies").css("opacity",0.5);
+        $(this).css("opacity",1);
+        $(this).addClass("beauty_movies_active");
+    },function () {
+        $(this).removeClass("beauty_movies_active");
+        $(".beauty_movies").css("opacity",1);
+    });
+
+    function showembed() {
+        $("embed").css("display","block");
+    }
+</script>
+{%endblock%}
+</body>
+</html>

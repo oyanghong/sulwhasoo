@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雪花秀风尚-雪花秀(Sulwhasoo)中国官网</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/special.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div class="container">
+        <div class="special_content">
+            <img src="../../public/image/special_files/1467677633694.jpg" style="width:50%; height: 100%"/>
+            <div class="special_text">
+                <div class="special_textcontent">
+                    <h2>Considerate</h2>
+                    <p>多少年了，根深茂密的那棵大树始终矗立在此，而今天那棵大树显得尤为苍郁。 其实并非特别，漫长岁月中，它始终在原地每天为路人展现着不同的面貌。 这天枝梢上开放的花朵尤为显眼，或许正是因为如它一样的丽人造访的缘故吧。</p>
+                    <a href="/admin/special/interview" class="btn special_btn">访谈详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="special_content">
+            <div class="special_text">
+                <div class="special_textcontent">
+                    <h2>Considerate</h2>
+                    <p>正如新春迎春花、映山红、玉兰、山茱萸，喜爱的花朵竞相绽放般，梦想、希望、安慰、忍耐，以及关心，对他人的恻隐之心、冒险与挑战，在主持人崔贤贞的人生中绚烂、美丽地绽放。</p>
+                    <a href="/admin/special/interview" class="btn special_btn">访谈详情</a>
+                </div>
+            </div>
+            <img src="../../public/image/special_files/1467677619153.jpg" style="width:50%; height: 100%"/>
+        </div>
+        <div class="special_bottom">
+            <div class="special_img">
+                <img src="../../public/image/special_files/1467677633694(1).jpg"/>
+                <a href="###" class="special_hover">
+                    <p>音乐剧演员</p>
+                    <hr/><br/>
+                    <span>金素贤</span>
+                    <i></i>
+                </a>
+            </div>
+            <div class="special_img">
+                <img src="../../public/image/special_files/1467677619153(1).jpg"/>
+                <a href="###" class="special_hover">
+                    <p>主持人</p>
+                    <hr/><br/>
+                    <span>崔贤珍</span>
+                    <i></i>
+                </a>
+            </div>
+            <div class="special_img">
+                <img src="../../public/image/special_files/1467608872389.jpg"/>
+                <a href="###" class="special_hover">
+                    <p>小提琴家</p>
+                    <hr/><br/>
+                    <span>Shin Zi A</span>
+                    <i></i>
+                </a>
+            </div>
+            <div class="special_img">
+                <img src="../../public/image/special_files/1467677604447.jpg"/>
+                <a href="###" class="special_hover">
+                    <p>电影演员</p>
+                    <hr/><br/>
+                    <span>文晶熙</span>
+                    <i></i>
+                </a>
+            </div>
+
+            <div class="special_img_hidden">
+                <div class="special_img">
+                    <img src="../../public/image/special_files/1467611878268.jpg"/>
+                    <a href="###" class="special_hover">
+                        <p>主持人</p>
+                        <hr/><br/>
+                        <span>Sohn Mi Na</span>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="special_img">
+                    <img src="../../public/image/special_files/1440489083773.jpg"/>
+                    <a href="###" class="special_hover">
+                        <p>音乐剧演员</p>
+                        <hr/><br/>
+                        <span>朴慧娜</span>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="special_img">
+                    <img src="../../public/image/special_files/1439804684091.jpg"/>
+                    <a href="###" class="special_hover">
+                        <p>演员</p>
+                        <hr/><br/>
+                        <span>金成京</span>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="special_img">
+                    <img src="../../public/image/special_files/1439804710921.jpg"/>
+                    <a href="###" class="special_hover">
+                        <p>芭蕾舞女演员</p>
+                        <hr/><br/>
+                        <span>金周媛</span>
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <img class="special_title" src="../../public/image/special_files/txt_style_list.png"/><br/>
+            <a href="javascript:void(0)" onclick="specialShow(this)" class="btn special_btn">了解更多</a>
+        </div>
+    </div>
+{%include 'footer.html'%}
+
+
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script>
+        function specialShow(e) {
+            $(".special_img_hidden").css("display","block");
+            $(e).css("display","none");
+            var top=$(".special_title").offset().top-$(window).height()-30;
+//            $(window).scrollTop(top);
+            $("body").animate({scrollTop:top},800);
+        }
+    </script>
+{%endblock%}
+</body>
+</html>

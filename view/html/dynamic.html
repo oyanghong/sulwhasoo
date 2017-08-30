@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/dynamic.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/js/dynamic.js"></script>
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/top.js"></script>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div id="dynamic">
+        <ul id="dy_top">
+            <li><a>全部</a></li>
+            <li class="dy_active"><a>中国</a></li>
+            <li><a>海外</a></li>
+            <li><a>视频</a></li>
+        </ul>
+        <iframe id="dy_test" class="dy_iframe" style="height:2266px" src="/html/dynamic/dy_all"></iframe>
+        <iframe class="dy_iframe dy_iframeActive" style="height:1706px" src="/html/dynamic/dy_china"></iframe>
+        <iframe class="dy_iframe" style="height:1301px" src="/html/dynamic/dy_abroad"></iframe>
+        <iframe class="dy_iframe" style="height:1691px" src="/html/dynamic/dy_video"></iframe>
+    </div>
+{%include 'footer.html'%}
+{%endblock%}
+
+</body>
+</html>

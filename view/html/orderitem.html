@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/shopCar.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        #car_step .car_step1{
+            background-position: 0 15px;
+        }
+        #car_step .car_step2{
+            background-position: -275px -261px;
+        }
+        #pwdwindow{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            padding-top: 100px;
+            position: fixed;
+            top:10%;
+            left: 40%;
+            z-index: 10005;
+            background: #fff;
+            display: none;
+        }
+        #close{
+            position: absolute;
+            right: 20px;
+            top:20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+<div class="container">
+    <div id="car_title">
+        订购/付款
+    </div>
+    <div id="car_step">
+        <ul>
+            <li>
+                <div class="car_step1">
+                    <span>Step01.</span><br/>
+                    <p>购物车</p>
+                </div>
+                <img src="../../public/image/shopCar_files/img_cart_step_arrow.png" height="17" width="10"/>
+            </li>
+            <li class="car_on">
+                <div class="car_step2">
+                    <span>Step02.</span><br/>
+                    <p>订单/付款</p>
+                </div>
+                <img src="../../public/image/shopCar_files/img_cart_step_arrow.png" height="17" width="10"/>
+            </li>
+            <li>
+                <div class="car_step3">
+                    <span>Step03.</span><br/>
+                    <p>订单提交成功</p>
+                </div>
+                <img src="../../public/image/shopCar_files/img_cart_step_arrow.png" height="17" width="10"/>
+            </li>
+            <li>
+                <div class="car_step4">
+                    <span>Step04.</span><br/>
+                    <p>付款成功</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/html/shop">
+            <img src="../../public/image/shopCar_files/img_cart_visual_01.jpg" height="150" width="1100"/>
+        </a>
+    </div>
+    <div id="car_box">
+        <table>
+            <thead>
+            <tr>
+                <th scope="col" colspan="2">商品</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>运费</th>
+                <th>最终实付金额</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%for order in orders%}
+            <tr>
+                <td class="car_gname" scope="col" colspan="2">
+                    <img src='{{order.pic}}' width="100px" height="100px"/>
+                    {{order.gname}}
+                </td>
+                <td class="car_price">{{order.price}}</td>
+                <td>
+                    <span>{{order.num}}</span>
+                </td>
+                <td>0</td>
+                <td class="car_count">{{order.obuy}}</td>
+
+            </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+        <div id="car_money">
+            <p>
+                <span>合计金额</span>
+                <b>¥</b>
+                <b class="car_Ecount">0</b>
+            </p>
+            <span class="car_bg">+</span>
+            <p>
+                <span>运费</span>
+                <b>¥</b>
+                <b class="car_sum">0</b>
+            </p>
+            <span class="car_bg">=</span>
+            <p>
+                <span>最终实付金额</span>
+                <b class="car_red">¥</b>
+                <b class="car_red car_pay">0</b>
+            </p>
+        </div>
+        <h3>满足各活动条件时可获得的赠品</h3>
+        <img src="../../public/image/shopCar_files/sulwhasoo_sample.jpg" height="210" width="1100"/>
+        <div class="car_btn">
+            <span id="payright" class="btn culture_btn">立即付款</span>
+            <span id="saveorder" class="btn culture_btn car_buybtn">保存订单</span>
+            <span id="delstate" class="btn culture_btn car_buybtn">取消</span>
+        </div>
+        <a href="#" onclick="showfloat()">
+            <img src="../../public/image/shopCar_files/sulwhasoo_315.jpg" height="102" width="1100"/>
+        </a>
+    </div>
+    <div id="car_float">
+        <h2>退货步骤</h2>
+        <p>请先与客服人员协商，退货得到认可时，订单状态将变更为“退货处理中”，订购者将退货的商品按照客服人员的指示邮寄回公司即可。</p>
+
+        <h2>退换货政策</h2>
+        <p>顾客自收到商品之日起七日内想调换其他产品或不喜欢所购买的产品，可以申请退换货。在满足以下条件的情况下，我们将退还相应的货款，但由顾客来承担因退换货而产生的运输费。
+            <br/><br/>
+            1)商品需保证未开封、未使用（不影响二次销售）。
+            <br/><br/>
+            2)原盒包装、发货单和赠品一并退回。
+            <br/><br/>
+            如果出现顾客收到的商品与购买的商品不同，或顾客收货时发现商品已破损等情况，我们将退还相应的货款并承担因退换货而产生的运输费。
+            <br/><br/>
+            产品自身质量问题，我们将退还相应的货款并承担因退换货而产生的运输费。但因顾客非正常使用及保管不当出现的产品质量问题，不提供退换服务。
+            <br/><br/>
+            因使用产品导致皮肤过敏时，在顾客提供正规医院（建议提供三级甲等及以上医院）皮肤专科门诊诊断书的情况下，我们将退还相应的货款并承担因退换货而产生的运输费。
+        </p>
+        <h2>退款流程</h2>
+        <p>收到退货并验明无误后，我们将在3个工作日之内完成退款。
+            <br/><br/>
+            1)如果您当初是选用支付宝付款的，退款将通过支付宝的形式退还给您支付宝账号。
+            <br/><br/>
+            2)如果您是通过网上银行支付的，退款将退入您当时支付的银行账户。
+            <br/><br/>
+            鉴于银行体系以及邮政体系的内部流程，完成退款操作后，该退款约15-30天左右到达您的银行账户。
+        </p>
+        <div class="car_btn">
+            <span class="btn culture_btn car_sub" onclick="closefloat()">确认</span>
+        </div>
+        <e class="PI_close" onclick="closefloat()"></e>
+    </div>
+    <div id="pwdwindow">
+        <p>
+            请输入支付密码：
+            <input type="password" name="pwd" id="pwd"/>
+        </p>
+        <button id="paysub" class="btn btn-default">确认</button>
+        <span id="close">X</span>
+    </div>
+</div>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/product_introduce.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+    var sum=0;
+    var car_count=$(".car_count");
+    for(var i=0;i<car_count.length;i++){
+        var str=parseInt(car_count.eq(i).html());
+        sum+=str;
+    }
+    $(".car_Ecount").html(sum);
+    $(".car_pay").html(sum);
+    //取消  发送删除请求
+    $("#delstate").click(function () {
+        $.post("/admin/delstate",null,function (data) {
+            if(data==1){
+                window.location.href='/api/html/shopCar';
+            }
+        });
+    });
+    //保存订单
+    $("#saveorder").click(function () {
+        $.post("/admin/saveorder",null,function (date) {
+            if(date==1){
+                alert("保存成功");
+                window.location.reload();
+            }
+        })
+    });
+    $("#payright").click(function () {
+        $("#pwdwindow").css("display","block");
+        $("#close").click(function () {
+            $("#pwdwindow").css("display","none");
+        });
+        $("#paysub").click(function () {
+            var pwd=$("#pwd").val();
+            $.post("/api/payright",{pwd:pwd},function (data) {
+                if(data==0){
+                    alert("密码输入错误，请重新输入");
+                }else if(data==1){
+                    alert("支付成功");
+                    window.location.reload();
+                }
+            });
+        });
+    });
+</script>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/red_index.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div id="rec_1top">
+        <p class="rec_p rec_1_fontSong">夜，玉能养颜<br>晨，肤若凝脂</p>
+        <span class="rec_span rec_1_fontSong">凝脂玉面膜</span>
+        <img class="rec_img" src="../../public/image/rec_files/ico_scroll.png" height="32" width="54"/>
+    </div>
+    <div class="rec_1_bg" id="rec_1_video">
+        <div id="rec_1play">
+            <embed width="100%" height="100%" src="http://player.youku.com/player.php/sid/XMjcyNzUyODI2OA==/isAutoPlay/false/isShowRelatedVideo/false/partnerid/5e97451fc90ec8cc/v.swf"></embed>
+            <img src="../../public/image/rec_files/img_video_material.jpg"/>
+            <i class="icon-play"></i>
+        </div>
+    </div>
+    <div class="rec_1_bg">
+        <ul id="rec_1_ul">
+           <li id="rec_1_li01" style="margin-right: 60px;">
+               <div class="rec_1_word">
+                   <p class="rec_colorGreen rec_1_liP01">承载亚洲智慧</p>
+                   <p style="line-height: normal">
+                       西方钻石，东方玉石<br>
+                       玉是亚洲地区极其推崇的珍惜珠宝。
+                   </p>
+               </div>
+           </li>
+            <li id="rec_1_li02">
+                <div class="rec_1_word">
+                    <p class="rec_colorGreen rec_1_liP01">净澈玉能量</p>
+                    <p style="line-height: normal">
+                        凝聚大地的精华，孕育了玉石的净澈能量。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="rec_1_bg rec_1_padding60" style="height: 760px;">
+        <h1 class="rec_colorGreen rec_1_fontSong">智慧</h1>
+        <p class="rec_1_fontSong">
+            玉因其具有卓越功效而被各种古籍收录在册，雪花秀经多年研究终<br/>
+            于研发出雪玉能量贮存技术，将玉能量传递至肌肤。
+        </p>
+        <div id="rec_1_div02">
+            <img src="../../public/image/rec_files/img_skill_Jadesphere_1.jpg"/>
+            <div class="rec_1_word">
+                <p class="rec_colorGreen rec_1_liP01">雪玉能量贮存技术</p>
+                <p style="line-height: normal;font-size: 1em">
+                    将珍贵的白玉能量粉包裹于多孔微粒中，将珍稀玉石的净澈能量传递至肌肤，夜间吸附肌肤表面的污垢，绽现澄净光洁肌肤。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="rec_1_bg">
+        <h1 class="rec_colorGreen rec_1_fontSong rec_1_padding60" style="border-top: 1px solid #A9C8C3;height: 110px">感观体验</h1>
+        <p class="rec_1_fontSong">温润的质地与独特雪颜按摩法赋予肌肤舒适愉悦的养肤体验</p>
+        <div class="rec_1_imgact" style="margin-right: 20px">
+            <img src="../../public/image/rec_files/img_feature_texture.gif"/>
+            <div class="rec_1_word" style="width:530px ">
+                <p class="rec_colorGreen rec_1_liP01">柔滑温润质地</p>
+                <p style="line-height: normal;font-size: 1em">
+                    承载玉石能量的温润质地，<br/>
+                    在肌肤表面形成保护屏障。
+                </p>
+            </div>
+        </div>
+        <div class="rec_1_imgact">
+            <img src="../../public/image/rec_files/img_feature_scent.jpg"/>
+            <div class="rec_1_word" style="width:530px ">
+                <p class="rec_colorGreen rec_1_liP01">雪颜按摩美容棒</p>
+                <p style="line-height: normal;font-size: 1em">
+                    多功能美容棒帮助提升按摩效果。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="rec_1bottom">
+        <div class="rec_1_divbot">
+            <p class="rec_1_fontSong rec_colorGreen" style="font-size: 2.5em">凝脂玉面膜</p>
+            <p style="line-height: normal;color: #555555;font-size: 1.1em" class="rec_1_fontSong">
+                蕴含白玉能量，于夜间吸附肌肤污垢，修护受损肌肤；<br/>
+                清晨唤醒凝脂般柔滑澄净肌肤的睡眠面膜。
+            </p>
+            <a href="/admin/product_introduce" target="_blank">产品详情</a>
+        </div>
+    </div>
+{%include 'footer.html'%}
+<script src="../../public/js/jquery-1.12.4.js"></script>
+<script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../../public/js/top.js"></script>
+<script>
+
+    $(function () {
+        var $rec1Play=$("#rec_1play");
+
+        $rec1Play.click(function () {
+            $rec1Play.find("embed").css("display","block");
+            $rec1Play.find("img").css("display","none");
+            $rec1Play.find(".icon-play").css("display","none");
+        });
+    });
+</script>
+{%endblock%}
+</body>
+</html>

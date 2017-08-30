@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico"/>
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/shop.css">
+    <link rel="stylesheet" href="../../public/css/formember.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/top.js"></script>
+    <script>
+        $(function () {
+            $("table tr th").attr("class","mem_borderB mem_borderR");
+            for(var i=0;i<$("table tr td").length;i++){
+                if(i!=2 && i!=5 && i!=8  && i!=9){
+                    $("table tr td").eq(i).attr("class","mem_borderB  mem_borderR");
+                }else{
+                    $("table tr td").eq(i).attr("class","mem_borderB");
+                }
+            }
+
+            //页面转换
+            $("#mem_first a").eq(0).click(function () {
+                $("#mem_first a").eq(0).css("text-decoration","none");
+                $("#mem_first a").eq(0).addClass("mem_active");
+                $("#mem_first a").eq(1).removeClass("mem_active");
+                $("#mem_join").fadeIn(300);
+                $("#mem_rule").fadeOut(300);
+            });
+            $("#mem_first a").eq(1).click(function () {
+                $("#mem_first a").eq(1).css("text-decoration","none");
+                $("#mem_first a").eq(1).addClass("mem_active");
+                $("#mem_first a").eq(0).removeClass("mem_active");
+                $("#mem_rule").fadeIn(300);
+                $("#mem_join").fadeOut(300);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    {%include 'top.html'%}
+
+    {%block main%}
+    <div class="container">
+        <h2>会员独享</h2>
+        <div id="mem_first">
+            <a href="javascript:void(0);" class="mem_active">官网独享优惠</a>
+            <a href="javascript:void(0);">按会员等级可获得的优惠</a>
+        </div>
+        <div id="mem_join">
+            <p>选择官网的理由</p>
+            <a href="/api/html/register">加入会员</a>
+            <ul id="mem_pic">
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_01.png"/>
+                    100%正品保证
+                </li>
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_02.png"/>
+                    全场免邮
+                </li>
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_03.png"/>
+                    优先试用
+                </li>
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_04.png"/>
+                    丰富活动
+                </li>
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_05.png"/>
+                    臻享礼盒
+                </li>
+                <li>
+                    <img src="../../public/image/shop_files/m_ico_policy_06.png"/>
+                    线上线下积分共享
+                </li>
+            </ul>
+        </div>
+        <table width="1100px" id="mem_rule">
+            <thead style="background-color: #F9F9F9">
+                <tr>
+                    <th></th>
+                    <td>
+                        <img src="../../public/image/shop_files/ico_grade_01.jpg"/>
+                        <p>
+                            <span style="color: #6B8077">体验</span>
+                            会员
+                        </p>
+                    </td>
+                    <td>
+                        <img src="../../public/image/shop_files/ico_grade_02.jpg"/>
+                        <p>
+                            <span style="color: #DD9061">正式</span>
+                            会员
+                        </p>
+                    </td>
+                    <td>
+                        <img src="../../public/image/shop_files/ico_grade_03.jpg"/>
+                        <p>
+                            <span style="color: #AE7777">VIP</span>
+                            会员
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr style="height:140px">
+                <th>标准</th>
+                <td>
+                    <p>首次购买<span>2,000元</span>以下</p>
+                </td>
+                <td>
+                    <p>首次购买<span>2,000元</span>以上<br/>
+                        或<br/>
+                        3个月内购买2次以上的顾客
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        2016年内在雪花秀官网或专柜消费次数超过3<br/>
+                        次及以上，<br/>
+                        并且金额超过<span>15,000元的会员</span>，<br/>
+                        可获得2017年VIP会籍，有效期为一年
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 200px">
+                <th>优惠</th>
+                <td>
+                    <p>首次购买后3个月内再次购买，<br/>
+                    可获得<span>600</span>积分并升级。
+                    </p>
+                </td>
+                <td>
+                    <ol>
+                        <li>首次购买后3个月内再次购买，可获得600积分。</li>
+                        <li>积分兑换（指定日期）</li>
+                        <li>生日当月首次购买，可额外获得50%积分。（不可与会员日2017.4.29-2017.5.1限时三天双倍积分活动同享）</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>积分兑换 (每月一次)</li>
+                        <li>生日当月首次购买，可获得双倍积分和生日礼品。（不可与会员日2017.4.29-2017.5.1限时三天双倍积分活动同享）</li>
+                        <li>可优先预约Beauty Class。</li>
+                        <li>新产品优先试用。</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <th>条件</th>
+                <td colspan="3">
+                    <p>
+                        1元=1积分，35,000积分封顶，超出积分不予累计。积分有效期为您最后一次购买之后12月内，到期未兑换，积分将被清零。<br/>
+                        每个会员ID仅限一人使用并累计积分。
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="#" class="shop_block"></a>
+    <div class="footer">
+        {%include 'footer.html'%}
+
+    </div>
+</div>
+{%endblock%}
+</body>
+</html>

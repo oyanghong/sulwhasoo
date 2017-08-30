@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo - 凝脂玉面膜</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/red_index.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/js/top.js"></script>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div id="rec_3">
+        <div class=" rec_3 rec_3top">
+            <img src="../../public/image/rec_files/rec3_1.jpg"/>
+            <a href="/admin/product_introduce2" target="_blank"></a>
+        </div>
+        <div class=" rec_3 rec_3center">
+            <div id="rec_3play">
+                <embed width="756px" height="425px" src="http://player.youku.com/player.php/sid/XMjYxMjE4MzI3Mg==/isAutoPlay/false/isShowRelatedVideo/false/partnerid/5e97451fc90ec8cc/v.swf"></embed>
+                <img src="../../public/image/rec_files/rec3_3.jpg" height="425" width="756"/>
+                <i class="icon-play"></i>
+            </div>
+        </div>
+        <div class=" rec_3 rec_3bottom">
+            <img src="../../public/image/rec_files/rec3_4.jpg"/>
+            <a href="/admin/product_introduce2" target="_blank" class="link4 rec_4link1"></a>
+            <a href="/admin/product_introduce2" target="_blank" class="link3 rec_4link2"></a>
+            <a href="/admin/product_introduce2" target="_blank" class="link3"></a>
+            <a href="/admin/product_introduce2" target="_blank" class="link4"></a>
+            <a href="/admin/product_introduce2" target="_blank" class="link3 rec_4link5"></a>
+            <a href="/admin/product_introduce2" target="_blank" class="link4 rec_4link6"></a>
+            <a href="/html/product/protection" target="_blank" class="link4 rec_4link7"></a>
+        </div>
+    </div>
+{%include 'footer.html'%}
+    <script>
+        $(function(){
+            $("#rec_3play").click(function(){
+                $("#rec_3play embed").css("display","block");
+                $("#rec_3play img").css("display","none");
+                $(".icon-play").css("display","none");
+            });
+        });
+    </script>
+{%endblock%}
+</body>
+</html>

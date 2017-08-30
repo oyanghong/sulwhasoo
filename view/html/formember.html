@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico"/>
+    <title>Sulwhasoo</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/shop.css">
+    <link rel="stylesheet" href="../../public/css/formember.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $("#for_ex_cover").click(function () {
+                $("#for_ex_cover").addClass("for_active");
+                $("#cover").css("display","block");
+                $("#for_expect").css("display","block");
+            });
+
+            $("#for_expect_a").click(function () {
+                $("#for_ex_cover").removeClass("for_active");
+                $("#cover").css("display","none");
+                $("#for_expect").css("display","none");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    {%include 'top.html'%}
+
+    {%block main%}
+    <div class="container">
+    </div>
+    <div class="container">
+        <h2>会员独享</h2>
+        <div class="for_block mem_benefit">
+            <div class="for_box">
+                <h3>会员优惠</h3>
+                <p>在雪花秀官网可享受各种会员优惠，</p>
+                <p>请点击查看详情。</p>
+                <a href="/admin/formember/mem_discount" class="for_more">查看详情</a>
+            </div>
+        </div>
+        <div class="for_block ex_point">
+            <div class="for_box">
+                <h3>积分兑换</h3>
+                <p>您所获得的积分可兑换雪花秀正品，</p>
+                <p>敬请尊享。</p>
+                <a href="javascript:void(0);" class="for_more" id="for_ex_cover">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <div id="cover"></div>
+    <div id="for_expect">
+        <p id="for_ex_p">提示</p>
+        <p id="for_ex_p2">敬请期待</p>
+        <a href="javascript:void(0);" class="for_more" id="for_expect_a">确定</a>
+    </div>
+    <a href="#" class="shop_block"></a>
+    <div class="footer">
+        {%include 'footer.html'%}
+
+    </div>
+</div>
+{%endblock%}
+</body>
+</html>

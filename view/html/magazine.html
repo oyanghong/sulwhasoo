@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sulwhasoo SPA - 雪花秀SPA-雪花秀(Sulwhasoo)中国官网</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale"/>
+    <link rel="stylesheet" href="../../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/image/index_files/favicon.ico">
+    <link rel="stylesheet" href="../../public/css/magazine.css">
+    <link rel="stylesheet" href="../../public/css/product.css">
+    <style>
+        .container{
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+    </style>
+</head>
+<body>
+{%include 'top.html'%}
+
+{%block main%}
+    <div class="container">
+        <div id="mz_head">
+            <h1>雪花秀杂志</h1>
+            <p>以追求平衡与和谐的品牌哲学为基础，提供关于美容、音乐、美术等各种方面的最新信息，致力于文化交流与传播，是雪花秀的高档文化杂志。</p>
+        </div>
+        <div id="mz_select">
+            <div class="dropdown">
+                <button id="mz_myselect" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Vol.79 May/June 2017
+                    <i class="mz_down"></i>
+                </button>
+                <ul id="mz_menu" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="is-current is-active"><a href="">Vol.79 May/June 2017</a></li>
+                    <li><a href="##">Vol.78 March/April 2017</a></li>
+                    <li><a href="##">Vol.77 January/February 2017</a></li>
+                    <li><a href="##">Vol.76 November/December 2016</a></li>
+                    <li><a href="##">Vol.75 September/October 2016</a></li>
+                    <li><a href="">Vol.74 July/August 2016</a></li>
+                    <li><a href="">Vol.73 May/June 2016</a></li>
+                    <li><a href="">Vol.72 March/April 2016</a></li>
+                    <li><a href="">Vol.71 January/February 2016</a></li>
+                    <li><a href="">Vol.70 November/December 2015</a></li>
+                    <li><a href="">Vol.69 September/October 2015</a></li>
+                    <li><a href="">Vol.68 July/August 2015</a></li>
+                    <li><a href="">Vol.67 May/June 2015</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499219022799.jpg" width="100%"/>
+            </a>
+            <p>点缀身体</p>
+            <span>寻找点点滴滴的幸福</span>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499218491813.jpg" width="100%"/>
+            </a>
+            <p>点缀房间</p>
+            <span>礼尚往来，让关系更进一步</span>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499217788707.jpg" width="100%"/>
+            </a>
+            <p>读</p>
+            <span>青春，春天般灿烂的瞬间</span>
+        </div>
+        <div class="mz_text mz_textRight">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499216737827.jpg" width="100%"/>
+            </a>
+            <p>雪花收藏</p>
+            <span>越古老，越美好</span>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499214176697.jpg" width="100%"/>
+            </a>
+            <p>空间之美</p>
+            <span>在陈旧的净水设施上萌生的生态公园</span>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1499219388137.jpg" width="100%"/>
+            </a>
+            <p>超越</p>
+            <span>散发出无法抗拒的魅力</span>
+        </div>
+        <div class="mz_text">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1498178016352.jpg" width="100%"/>
+            </a>
+            <p>和谐</p>
+            <span>在屋里挂一幅如意的画</span>
+        </div>
+        <div class="mz_text mz_textRight">
+            <a href="/admin/magazine/magazine_introduce">
+                <img src="../../public/image/magazine_files/1498185488499.jpg" width="100%"/>
+            </a>
+            <p>雪花风景</p>
+            <span>韩国传统美与自然美相融合</span>
+        </div>
+        <div id="mz_page">
+            <strong>1</strong>
+            of
+            <span>2</span>
+            <a href="/html/special/magazine2">
+                >
+            </a>
+        </div>
+    </div>
+{%include 'footer.html'%}
+
+
+    <script src="../../public/js/jquery-1.12.4.js"></script>
+    <script src="../../public/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../../public/js/top.js"></script>
+    <script>
+        var flag=false;
+        $("#mz_myselect").click(function () {
+            if(flag){
+                $(".dropdown").removeClass("open");
+                flag=false;
+            }else {
+                $(".dropdown").addClass("open");
+                flag=true;
+            }
+        });
+    </script>
+{%endblock%}
+</body>
+</html>
